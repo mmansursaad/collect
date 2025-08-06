@@ -11,13 +11,13 @@
 -->
 <resources xmlns:tools="http://schemas.android.com/tools" xmlns:oat="http://schema.getodk.org/odkAndroidTools" tools:ignore="MissingTranslation" tools:locale="en">
     <!-- Text for the topmost button on the main screen. It should be short and action-oriented. -->
-    <string name="enter_data">Start new form</string>
+    <string name="enter_data">Make an Entry</string>
     <!-- Text for an action button on the main screen. -->
     <string name="review_data">Drafts</string>
     <!-- Text for an action button on the main screen. -->
-    <string name="send_data">Ready to send</string>
+    <string name="send_data">Awaiting submission</string>
     <!-- Text for an action button on the main screen. -->
-    <string name="view_sent_forms">Sent</string>
+    <string name="view_sent_forms">Sent Records</string>
     <!-- Text for an action button on the main screen. -->
     <string name="get_forms">Download form</string>
     <!-- Text for an action button on the main screen. -->
@@ -28,13 +28,13 @@
     <string name="version_number">Version: %s</string>
     <string name="id_number">ID: %s</string>
     <!-- Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html -->
-    <string name="added_on_date_at_time">\'Added on\' EEE, MMM dd, yyyy \'at\' HH:mm</string>
+    <string name="added_on_date_at_time">\'Last updated on\' EEE, MMM dd, yyyy \'at\' HH:mm</string>
     <!-- Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html -->
-    <string name="updated_on_date_at_time">\'Updated on\' EEE, MMM dd, yyyy \'at\' HH:mm</string>
+    <string name="updated_on_date_at_time">\'Last updated on\' EEE, MMM dd, yyyy \'at\' HH:mm</string>
     <!-- Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html -->
     <string name="saved_on_date_at_time">\'Saved on\' EEE, MMM dd, yyyy \'at\' HH:mm</string>
     <!-- Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html -->
-    <string name="finalized_on_date_at_time">\'Finalized on\' EEE, MMM dd, yyyy \'at\' HH:mm</string>
+    <string name="finalized_on_date_at_time">\'Recorded on\' EEE, MMM dd, yyyy \'at\' HH:mm</string>
     <!-- Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html -->
     <string name="sent_on_date_at_time">\'Sent on\' EEE, MMM dd, yyyy \'at\' HH:mm</string>
     <!-- Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html -->
@@ -61,14 +61,14 @@
 
     <string name="not_granted_permission">The activity you are trying to start requires a permission which is not granted.</string>
     <string name="storage_runtime_permission_denied_title">Storage permissions</string>
-    <string name="storage_runtime_permission_denied_desc">Without these permissions Collect can\'t access your forms or save answers. Reopen the app when you are ready to grant them.</string>
+    <string name="storage_runtime_permission_denied_desc">Without these permissions this App can\'t access your projects or save answers. Reopen the app when you are ready to grant them.</string>
     <string name="location_runtime_permissions_denied_title">Location permissions</string>
     <!-- Starting in Android 12, Android makes it possible to give precise or approximate location permissions to an application. ODK Collect only captures location if the precise location permission is granted. -->
-    <string name="location_runtime_permissions_denied_desc">Without the <b>Precise Location</b> permission Collect can\'t record your location. Please try again when you are ready to grant it.</string>
+    <string name="location_runtime_permissions_denied_desc">Without the <b>Precise Location</b> permission this App can\'t record your location. Please try again when you are ready to grant it.</string>
     <string name="camera_runtime_permission_denied_title">Camera permission</string>
-    <string name="camera_runtime_permission_denied_desc">Without this permission Collect can\'t access the camera. Please try again when you are ready to grant it.</string>
+    <string name="camera_runtime_permission_denied_desc">Without this permission tis App can\'t access the camera. Please try again when you are ready to grant it.</string>
     <string name="record_audio_runtime_permission_denied_title">Record audio permission</string>
-    <string name="record_audio_runtime_permission_denied_desc">Without this permission Collect can\'t access the microphone. Please try again when you are ready to grant it.</string>
+    <string name="record_audio_runtime_permission_denied_desc">Without this permission this App can\'t access the microphone. Please try again when you are ready to grant it.</string>
 
     <!--
     ##############################################
@@ -81,10 +81,10 @@
     <string name="finished_disk_scan">Finished scanning. All forms loaded.</string>
     <string name="xform_parse_error">XForm parse error for %1$s: %2$s is missing or invalid.</string>
 
-    <string name="loading_form">Loading Form</string>
-    <string name="survey_loading_reading_form_message">Reading form definition…</string>
-    <string name="survey_loading_reading_data_message">Reading survey data…</string>
-    <string name="survey_loading_reading_csv_message">Reading CSV files…</string>
+    <string name="loading_form">Loading for Offline use</string>
+    <string name="survey_loading_reading_form_message">Reading definition…</string>
+    <string name="survey_loading_reading_data_message">Reading data…</string>
+    <string name="survey_loading_reading_csv_message">Reading files…</string>
     <string name="parse_error">Sorry, unable to parse form.</string>
     <string name="loading_form_failed">An error occurred while loading the form. Please try again.</string>
     <string name="cannot_edit_completed_form">This form cannot be edited once it has been marked as finalized. It may be encrypted.</string>
@@ -110,12 +110,12 @@
     <!-- Displayed below group names in a form's table of contents -->
     <string name="group_label">Group</string>
     <!-- Displayed below repeat names in a form's table of contents -->
-    <string name="repeatable_group_label">Repeatable Group</string>
+    <string name="repeatable_group_label">Sub-Group</string>
     <string name="exit">Exit</string>
 
     <!-- This sentence is used in the dialog for adding repeats and will be completed by a singular noun usually. Examples would be ‘Add “observation”?’ or ‘Add “Reading”?’. If the phrase doesn’t make sense in your language you can add a word like “new”, being careful of gender/plural.-->
-    <string name="add_repeat_question">Add \"%s\"?</string>
-    <string name="add_repeat">Add</string>
+    <string name="add_repeat_question">Add another \"%s\"?</string>
+    <string name="add_repeat">Add another</string>
     <string name="add_another_menu">Add another</string>
     <string name="add_another_question">Add another?</string>
 
@@ -136,15 +136,15 @@
 
     <string name="invalid_answer_error">Sorry, this response is invalid!</string>
     <string name="required_answer_error">Sorry, this response is required!</string>
-    <string name="success_form_validation">Success! No errors found in your form.</string>
+    <string name="success_form_validation">Success! No errors found in your entries.</string>
     <string name="invalid_space_in_answer_singular">Warning: underlying value %s has spaces</string>
     <string name="invalid_space_in_answer_plural">Warning: underlying values %s have spaces</string>
 
-    <string name="too_complex_form">This form is too complex for this device. Try simplifying expressions or ask for help on the forum.</string>
+    <string name="too_complex_form">This form is too complex for this device.</string>
 
     <string name="survey_internal_error">Internal error: step to prompt failed.</string>
     <!-- Title of the end of form screen -->
-    <string name="save_enter_data_description">You are at the end of %s.</string>
+    <string name="save_enter_data_description">All Entries completed, you can now submit.</string>
     <!-- Text shown in an information box on the end of form screen when auto-send is off or the device is offline -->
     <string name="form_editing_disabled_after_finalizing">Edits can\'t be made after finalizing.</string>
     <!-- Text shown in an information box on the end of form screen when auto-send is on and the device is online -->
@@ -217,7 +217,7 @@
     <string name="recording_disabled">Recording disabled. Enable in %s</string>
 
     <!-- Error displayed when something bad happens during updating widgets in a field-list group -->
-    <string name="update_widgets_error">Failure trying to update values. This is generally because of incorrect usage of calculations in the form design.\n\nIf you keep having this problem, report it to the person who asked you to collect data.</string>
+    <string name="update_widgets_error">Failure trying to update values. This is generally because of calculations in the design.\n\nIf you keep having this problem, report to support team.</string>
 
     <!--
     ##############################################
@@ -241,8 +241,8 @@
     <string name="alert">Alert</string>
     <string name="install_openmapkit">Please install OpenMapKit!</string>
 
-    <string name="get_barcode">Get Barcode</string>
-    <string name="replace_barcode">Replace Barcode</string>
+    <string name="get_barcode">SCAN</string>
+    <string name="replace_barcode">RE-SCAN</string>
     <string name="barcode_scanner_prompt">Place the barcode inside the rectangle</string>
 
     <string name="open_file">Open file</string>
@@ -341,7 +341,7 @@
     <string name="no_value_selected">No value selected</string>
     <string name="selected">Selected: </string>
 
-    <string name="trigger">OK. Please continue.</string>
+    <string name="trigger">OK. Continue.</string>
 
     <string name="ext_file_no_data_error">The file contains no data!</string>
     <string name="ext_conflicting_columns_error">Columns %s match!</string>
@@ -351,7 +351,7 @@
     <string name="ext_search_bad_function_error">Syntax error in search() function: \'%s\' was not evaluated as a function.</string>
     <string name="ext_search_return_error">The search handler returned a object of type \'%s\'.</string>
     <string name="ext_import_generic_error">Could not import data from %1$s. Reason: %2$s</string>
-    <string name="ext_import_progress_message">Pre-loading data from \'%1$s\', please wait… %2$s</string>
+    <string name="ext_import_progress_message">Pre-loading \'%1$s\' data %2$s</string>
     <string name="ext_import_cancelled_message">Reading data canceled!</string>
     <string name="ext_import_finalizing_message">Finalizing pre-loaded data…</string>
     <string name="ext_import_completed_message">Reading data completed!</string>
@@ -372,8 +372,8 @@
 
     <string name="select_date">Select date</string>
     <string name="select_time">Select time</string>
-    <string name="no_date_selected">No date selected</string>
-    <string name="no_time_selected">No time selected</string>
+    <string name="no_date_selected">.</string>
+    <string name="no_time_selected">.</string>
 
     <string name="ethiopian_month_1">Meskerem</string>
     <string name="ethiopian_month_2">Tikimt</string>
@@ -516,16 +516,16 @@
     <string name="carto_map_style_dark_matter">Dark Matter</string>
 
     <!-- Title for the offline layer section of settings-->
-    <string name="offline_layer">Offline layers</string>
+    <string name="offline_layer">Offline Cadastral layers</string>
 
     <!-- Label for the offline layer setting -->
-    <string name="layer_data_file">Layer</string>
+    <string name="layer_data_file">Cadastral Layer</string>
 
     <!-- Title for the screen that allows the user to select a offline layer for maps -->
-    <string name="offline_layer_dialog_title">Select offline layer</string>
+    <string name="offline_layer_dialog_title">Select Cadastral layer</string>
 
     <!-- Description of how to add offline layers to the project -->
-    <string name="offline_layer_dialog_description">Select the offline layer to use for all maps in this project. You can add options to the list by selecting an MBTiles file from your device and also delete existing layers from the list.</string>
+    <string name="offline_layer_dialog_description">Select the Cadastral layer file to use here. You can add more cadastral files to the list by importing from your device and also delete existing ones from the list.</string>
 
     <!-- Text of button user can press to get help when setting up Offline Layers -->
     <string name="get_help_with_offline_layers">Learn more about adding MBTiles.</string>
@@ -543,32 +543,32 @@
     </plurals>
 
     <!-- Text for message displayed in a dialog to inform that all the selected files are not MBTiles and they can't be imported -->
-    <string name="all_non_mbtiles_files_selected_message">The files you selected are not MBTiles. You can only add MBTiles files.</string>
+    <string name="all_non_mbtiles_files_selected_message">You selected an incorrect files type. You can only add MBTiles format.</string>
 
     <!-- Text for message displayed in a dialog to inform that some of the selected files are not MBTiles and they can't be imported -->
-    <string name="some_non_mbtiles_files_selected_message">Some of the files you selected are not MBTiles. You can only add MBTiles files.</string>
+    <string name="some_non_mbtiles_files_selected_message">You selected an incorrect files type. You can only add MBTiles format.</string>
 
     <!-- Text for title above list of layers -->
     <string name="layers_list_title">Layers</string>
 
     <!-- Text for title and subtitle above options for how the layer can be access -->
     <string name="select_layer_access_title">Select layers access</string>
-    <string name="select_layer_access_subtitle">Do you want the layers available in all projects or your current project only?</string>
+    <string name="select_layer_access_subtitle">Do you want the layers available in all forms or the current form only?</string>
 
     <!-- Text for option where layer should be available to all projects -->
-    <string name="all_projects_option">All projects</string>
+    <string name="all_projects_option">All Forms</string>
 
     <!-- Text for option where layer should be available to the current project only -->
-    <string name="current_project_option">Current project only</string>
+    <string name="current_project_option">Current form only</string>
 
     <!-- Text for message displayed in a dialog to confirm that the layer should be deleted. The placeholder is the name of the layer as displayed in the list -->
-    <string name="delete_layer_confirmation_message">Are you sure you want to delete the %1$s offline layer?</string>
+    <string name="delete_layer_confirmation_message">Are you sure you want to delete the %1$s cadastral layer?</string>
 
     <string name="record_geopoint">Record a point</string>
     <string name="location_accuracy">Accuracy: %1$s</string>
     <string name="location_accuracy_unacceptable">⚠️ Accuracy: %1$s (unacceptable)</string>
     <string name="provider_disabled_error">Sorry, Location providers are disabled!</string>
-    <string name="gps_result">Latitude: %1$s\nLongitude: %2$s\nAltitude: %3$s m\nAccuracy: %4$s m</string>
+    <string name="gps_result">Latitude: %1$s\nLongitude: %2$s\nAccuracy: %4$s m</string>
     <string name="google_play_services_not_available">This form wants to track your location but Google Play Services are not available.</string>
     <string name="location_providers_disabled_dialog_message">This form wants to track your location but location providers are disabled. Please enable in Android settings.</string>
     <!-- Action to go to Android settings. Displayed when location providers are disabled. -->
@@ -587,7 +587,7 @@
     <string name="time_elapsed">Time elapsed: %1$s</string>
 
     <!-- %1$s is the accuracy required for a point to be automatically saved-->
-    <string name="point_will_be_saved">Point will be saved at %1$s</string>
+    <string name="point_will_be_saved">GPS Point will autosave at %1$s</string>
 
     <!-- %1$s is the number of satellites being used to get location -->
     <string name="satellites">Satellites: %1$s</string>
@@ -596,7 +596,7 @@
     <string name="poor_accuracy">Poor accuracy. Please wait.</string>
     <string name="unacceptable_accuracy">Unacceptable accuracy. Please wait.</string>
     <string name="improving_accuracy">Improving accuracy. Please wait.</string>
-    <string name="accuracy_status_title">Getting Location</string>
+    <string name="accuracy_status_title">Getting GPS Location</string>
 
     <!-- The accuracy of a location fix in meters -->
     <string name="accuracy_m">%1$s m</string>
@@ -617,7 +617,7 @@
     <string name="geotrace_title">GeoTrace</string>
     <string name="gps_enable_message">GPS is disabled on your device. Would you like to enable it?</string>
     <string name="geo_clear_warning">Feature already created. Would you like to clear the feature?</string>
-    <string name="geo_exit_warning">Discard changes and return to ODK?</string>
+    <string name="geo_exit_warning">Discard changes and return to App?</string>
     <string name="polygon_validator">Must have at least 3 points to create Polygon</string>
     <string name="polyline_validator">Must have at least 2 points to create Polyline</string>
     <string name="clear">Clear</string>
@@ -682,7 +682,7 @@
     # SEND FINALIZED FORM
     ##############################################
     -->
-    <string name="uploading_data">Sending Form</string>
+    <string name="uploading_data">Sending Records</string>
 
     <string name="noselect_error">Sorry, you have not selected any forms!</string>
     <string name="no_connection">No network connection available</string>
@@ -693,7 +693,7 @@
     <string name="server_auth_credentials">Invalid username or password for server: %s</string>
     <string name="server_requires_auth">Server Requires Authentication</string>
 
-    <string name="no_forms_uploaded">Sorry, no form was uploaded.</string>
+    <string name="no_forms_uploaded">Sorry, no record was uploaded.</string>
 
     <string name="upload_results">Upload Results</string>
 
@@ -702,11 +702,11 @@
     <string name="show_sent_and_unsent_forms">Show Sent and Unsent Forms</string>
     <string name="show_unsent_forms">Show Unsent Forms</string>
 
-    <string name="send_in_progress">Background send running, please try again shortly</string>
+    <string name="send_in_progress">Autosend running, please try again shortly</string>
 
-    <string name="forms_upload_succeeded">Forms upload succeeded</string>
-    <string name="forms_upload_failed">Forms upload failed</string>
-    <string name="all_uploads_succeeded">All uploads succeeded!</string>
+    <string name="forms_upload_succeeded">Data upload successful</string>
+    <string name="forms_upload_failed">Data upload failed</string>
+    <string name="all_uploads_succeeded">All uploads successful!</string>
     <string name="some_uploads_failed">%1$s of %2$s uploads failed!</string>
 
     <!--
@@ -1106,22 +1106,22 @@
      # Projects
      ##############################################
      -->
-    <string name="projects">Projects</string>
+    <string name="projects">ACCOUNTS</string>
     <string name="settings">Settings</string>
-    <string name="add_project">Add project</string>
+    <string name="add_project">Add Account</string>
     <string name="add">Add</string>
     <!-- Title of the dialog shown when attempting to create a project with connection settings that match an existing project -->
-    <string name="duplicate_project">Duplicate project</string>
+    <string name="duplicate_project">Duplicate Account</string>
     <!-- Detail text of the dialog shown when attempting to create a project with connection settings that match an existing project -->
-    <string name="duplicate_project_details">You already have a project with these connection settings. Do you want to switch to the existing project or add a new one?</string>
+    <string name="duplicate_project_details">You already have this scanned. Do you want to switch to it or add(duplicate) a new one?</string>
     <!-- Button text for adding a duplicate project -->
-    <string name="add_duplicate_project">Add duplicate project</string>
+    <string name="add_duplicate_project">Add duplicate account</string>
     <!-- Buton text for switching to an existing project -->
-    <string name="switch_to_existing">Switch to existing project</string>
+    <string name="switch_to_existing">Switch to existing account</string>
 
-    <string name="project_name">Project name</string>
-    <string name="project_icon">Project icon</string>
-    <string name="project_color">Project color</string>
+    <string name="project_name">Account name</string>
+    <string name="project_icon">Account icon</string>
+    <string name="project_color">Account color</string>
     <!-- Toast text shown when the current project is changed -->
     <string name="switched_project">Switched to %s</string>
     <!-- Description for screen readers of which project is in use. This is part of the project selection dialog -->
@@ -1131,8 +1131,8 @@
     <string name="delete_project_confirm_message">All blank forms, submissions and settings will be permanently deleted.</string>
     <string name="delete_project_yes">Yes</string>
     <string name="delete_project_no">No</string>
-    <string name="cannot_delete_project_title">Project can\'t be deleted</string>
-    <string name="cannot_delete_project_message_one">You have unsent submissions. To delete the project, you must first send or delete those submissions.</string>
+    <string name="cannot_delete_project_title"> Account can\'t be deleted</string>
+    <string name="cannot_delete_project_message_one">You have unsent submissions. To delete the account, you must first send or delete those submissions.</string>
     <string name="cannot_delete_project_message_two">Background jobs are running. Please try again later.</string>
     <string name="or">OR</string>
     <string name="hex_color">Hex color</string>
@@ -1145,15 +1145,15 @@
     -->
     <!-- Tag line displayed on the first launch screen. The text should be split into two lines with \n. Please
     select the wording and where to put the \n for maximum impact in your language. -->
-    <string name="tagline">Collect data\nanywhere</string>
+    <string name="tagline">Welcome! Scan your state QR code</string>
     <!-- Text for the button that allows for configuring a project by scanning a QR code. Should be short -->
-    <string name="configure_with_qr_code">Configure with QR code</string>
+    <string name="configure_with_qr_code">Click to scan QR</string>
     <!-- Text for the button that allows for manually entering project details. Should be short -->
-    <string name="configure_manually">Manually enter project details</string>
-    <string name="project_config_tip">After you add your project, you can configure it in Settings</string>
+    <string name="configure_manually">Manual configuration</string>
+    <string name="project_config_tip">.</string>
     <!-- Immediately followed by "Try Collect" which is a link to create a demo project -->
     <string name="dont_have_project">Don\'t have a project yet?</string>
-    <!-- Preceded by "Don't have a project yet?" question -->
+    <!-- Preceded by "Don't have a project yet?" question-->
     <string name="try_demo">Try a demo</string>
     <string name="scan_configuration_qr_code">Scan configuration QR code</string>
 
@@ -1171,9 +1171,9 @@
     ##############################################
     -->
     <!-- Error shown when a user tries to open a form that's in a different project -->
-    <string name="wrong_project_selected_for_form">To open this form, you must first open ODK Collect and switch to the project that contains it.</string>
+    <string name="wrong_project_selected_for_form">To open this form, you must first open JED Optima and switch to the account that contains it.</string>
     <!-- Error shown when a user tries to open a form when there are no projects -->
-    <string name="app_not_configured">ODK Collect has not been configured. Try to open ODK Collect and configure it.\n\nIf you tapped on a shortcut, you might need to recreate it after configuring ODK Collect.</string>
+    <string name="app_not_configured">App has not been configured. Try to open the App and configure it.\n\nIf you tapped on a shortcut, you might need to recreate it after configuring ODK Collect.</string>
     <!-- Displayed when form filling is attempted to be launched by intent but the intent URI mime type is unknown -->
     <string name="unrecognized_uri">Unrecognized URI: %s</string>
     <!-- Displayed when form filling is attempted to be launched by intent but the intent URI is incorrect -->
@@ -1250,7 +1250,7 @@
     <string name="mlkit_is_always_used_for_scanning_project_qr_codes">ML Kit is always used for scanning project QR codes</string>
 
     <string name="permission_dialog_title">About permissions</string>
-    <string name="permission_dialog_text">You will be asked to allow ODK Collect access to the features below, select “allow” if you want to use them.</string>
+    <string name="permission_dialog_text">You will be asked to allow this App access to the features below, select “allow” if you want to use them.</string>
     <string name="notifications">Notifications</string>
     <string name="required_for_notifications">Required for showing updates when forms are downloaded, updated and sent.</string>
 
@@ -1259,9 +1259,9 @@
     # Form saved Snackbar
     ##############################################
     -->
-    <string name="form_saved_as_draft">Your form was saved as a draft.</string>
-    <string name="form_saved">Your form was saved.</string>
-    <string name="form_sending">Sending form…</string>
+    <string name="form_saved_as_draft">Your entry was saved as a draft.</string>
+    <string name="form_saved">Your entry was saved.</string>
+    <string name="form_sending">Sending entry…</string>
     <string name="edit_form">Edit</string>
     <string name="view_form">View</string>
     <string name="close_snackbar">Close snackbar</string>
@@ -1272,24 +1272,24 @@
     ##############################################
     -->
     <plurals name="last_form_sent_seconds_ago">
-        <item quantity="one">Last form sent: %d second ago</item>
-        <item quantity="other">Last form sent: %d seconds ago</item>
+        <item quantity="one">Last entry sent: %d second ago</item>
+        <item quantity="other">Last entry sent: %d seconds ago</item>
     </plurals>
     <plurals name="last_form_sent_minutes_ago">
-        <item quantity="one">Last form sent: %d minute ago</item>
-        <item quantity="other">Last form sent: %d minutes ago</item>
+        <item quantity="one">Last entry sent: %d minute ago</item>
+        <item quantity="other">Last entry sent: %d minutes ago</item>
     </plurals>
     <plurals name="last_form_sent_hours_ago">
-        <item quantity="one">Last form sent: %d hour ago</item>
-        <item quantity="other">Last form sent: %d hours ago</item>
+        <item quantity="one">Last entry sent: %d hour ago</item>
+        <item quantity="other">Last entry sent: %d hours ago</item>
     </plurals>
     <plurals name="last_form_sent_days_ago">
-        <item quantity="one">Last form sent: %d day ago</item>
-        <item quantity="other">Last form sent: %d days ago</item>
+        <item quantity="one">Last entry sent: %d day ago</item>
+        <item quantity="other">Last entry sent: %d days ago</item>
     </plurals>
     <plurals name="forms_ready_to_send">
-        <item quantity="one">%d form ready to send</item>
-        <item quantity="other">%d forms ready to send</item>
+        <item quantity="one">%d entry ready to send</item>
+        <item quantity="other">%d entries ready to send</item>
     </plurals>
 
     <string name="edit_finalized_form_warning" tools:ignore="UnusedResources">In later versions, finalized forms will no longer be editable. Save forms as draft to edit them later.\n\nYou can check for errors in a draft form by tapping the three dots (⋮) and then Check for errors.</string>
@@ -1339,9 +1339,9 @@
     <string name="empty_list_of_questions">Nothing available to display</string>
 
     <!-- Message displayed when the list of blank forms is empty -->
-    <string name="empty_list_of_blank_forms_title">No blank forms</string>
+    <string name="empty_list_of_blank_forms_title">Loading..</string>
     <!-- Subtext displayed when the list of blank forms is empty -->
-    <string name="empty_list_of_blank_forms_subtitle">Download form to get started</string>
+    <string name="empty_list_of_blank_forms_subtitle">If it takes a while, try to Refresh!</string>
 
     <!-- Message displayed when the list of drafts is empty -->
     <string name="empty_list_of_drafts_title">Nothing in drafts</string>
@@ -1349,14 +1349,14 @@
     <string name="empty_list_of_drafts_subtitle">When you save as draft, forms will appear here</string>
 
     <!-- Message displayed when the list of ready to send forms is empty -->
-    <string name="empty_list_of_finalized_forms_title">Nothing ready to send</string>
+    <string name="empty_list_of_finalized_forms_title">All records are sent</string>
     <!-- Subtext displayed when the list of ready to send forms is empty -->
-    <string name="empty_list_of_finalized_forms_subtitle">When you finalize drafts, they will appear here</string>
+    <string name="empty_list_of_finalized_forms_subtitle">When you take record, they will appear here before they are sent</string>
 
     <!-- Message displayed when the list of sent forms is empty -->
-    <string name="empty_list_of_sent_forms_title">Nothing in sent</string>
+    <string name="empty_list_of_sent_forms_title">Nothing in sent yet</string>
     <!-- Subtext of message displayed when the list of sent forms is empty -->
-    <string name="empty_list_of_sent_forms_subtitle">When you send finalized forms, they will appear here</string>
+    <string name="empty_list_of_sent_forms_subtitle">When entries are sent, they will appear here</string>
 
     <!-- Message displayed when the list of forms to download is empty -->
     <string name="empty_list_of_forms_to_download_title">No forms to download</string>
@@ -1377,20 +1377,20 @@
     <!-- Title displayed in a dialog before starting a form if there is a work to recover -->
     <string name="savepoint_recovery_dialog_title">Recover your work?</string>
     <!-- Message displayed in a dialog before starting a form if there is a work to recover. Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html-->
-    <string name="savepoint_recovery_dialog_message">\'Collect closed unexpectedly on \'EEE, MMM dd, yyyy \'at\' HH:mm\' and saved your work.\n\nWould you like to recover or discard it?\'</string>
+    <string name="savepoint_recovery_dialog_message">\'This app closed unexpectedly on \'EEE, MMM dd, yyyy \'at\' HH:mm\' and saved your work.\n\nWould you like to recover or discard it?\'</string>
     <!-- Text for the button that accepts the recovery of the work -->
     <string name="recover">Recover</string>
     <!-- Text for the button that declines the recovery of the work -->
     <string name="do_not_recover">Discard</string>
 
     <!-- Text for the button that initiates getting user location -->
-    <string name="get_point">Get point</string>
+    <string name="get_point">Get GPS point</string>
     <!-- Text for the button that displays a map for viewing or changing an already existing location -->
-    <string name="view_or_change_point">View or change point</string>
+    <string name="view_or_change_point">View or change GPS point</string>
     <!-- Text for the button that displays a map for viewing an already existing location -->
-    <string name="view_point">View point</string>
+    <string name="view_point">View GPS point</string>
     <!-- Text for the button that initiates getting user location when one is already present -->
-    <string name="change_point">Change point</string>
+    <string name="change_point">Retake GPS point</string>
     <!-- Text for the button that displays a map for getting a new line -->
     <string name="get_line">Get line</string>
     <!-- Text for the button that displays a map for viewing or changing an already existing line -->
@@ -1423,4 +1423,7 @@
     <string name="newer_finalized_edit_found_dialog_positive_button">Edit latest form</string>
     <!-- Text for the snackbar shown when editing of a finalized form begins -->
     <string name="finalized_form_edit_started">You are now editing this form. Tap on a question to start editing.</string>
+
+    <string name="custom_version_string">v1.0</string>
+
 </resources>
