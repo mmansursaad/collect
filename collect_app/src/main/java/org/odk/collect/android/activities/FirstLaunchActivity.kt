@@ -109,10 +109,11 @@ class FirstLaunchActivity : LocalizedActivity() {
             appName.text = String.format(
                 "%s %s",
                 getString(org.odk.collect.strings.R.string.collect_app_name),
-                versionInformation.versionToDisplay
+                getString(org.odk.collect.strings.R.string.custom_version_string)
+                //versionInformation.versionToDisplay
             )
 
-            dontHaveServer.apply {
+            /*dontHaveServer.apply {
                 text = SpannableStringBuilder()
                     .append(getString(org.odk.collect.strings.R.string.dont_have_project))
                     .append(" ")
@@ -123,7 +124,7 @@ class FirstLaunchActivity : LocalizedActivity() {
                 setOnClickListener {
                     viewModel.tryDemo()
                 }
-            }
+            }*/
         }
         lifecycle.addObserver(mdmConfigObserver)
     }

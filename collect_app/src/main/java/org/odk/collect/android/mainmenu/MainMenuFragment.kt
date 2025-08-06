@@ -237,7 +237,8 @@ class MainMenuFragment(
         binding.appName.text = String.format(
             "%s %s",
             getString(string.collect_app_name),
-            mainMenuViewModel.version
+            getString(string.custom_version_string)
+            //mainMenuViewModel.version
         )
 
         val versionSHA = mainMenuViewModel.versionCommitDescription
