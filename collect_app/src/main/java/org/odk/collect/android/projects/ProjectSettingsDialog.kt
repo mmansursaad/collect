@@ -77,10 +77,10 @@ class ProjectSettingsDialog(private val viewModelFactory: ViewModelProvider.Fact
             dismiss()
         }
 
-        binding.aboutButton.setOnClickListener {
+        /*binding.aboutButton.setOnClickListener {
             startActivity(Intent(requireContext(), AboutActivity::class.java))
             dismiss()
-        }
+        }*/
 
         return MaterialAlertDialogBuilder(requireContext())
             .setView(binding.root)
