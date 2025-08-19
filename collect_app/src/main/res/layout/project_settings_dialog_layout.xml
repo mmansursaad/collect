@@ -103,11 +103,11 @@
         android:text="@string/add_project"
         app:icon="@drawable/ic_baseline_qr_code_scanner_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/about_button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/guideline_start" />
 
-    <org.odk.collect.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+    <!--<org.odk.collect.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
         android:id="@+id/about_button"
         style="?borderlessButtonIconStyle"
         android:layout_width="wrap_content"
@@ -117,5 +117,5 @@
         app:icon="@drawable/ic_outline_info_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
-        app:layout_constraintStart_toEndOf="@id/add_project_button" />
+        app:layout_constraintStart_toEndOf="@id/add_project_button" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

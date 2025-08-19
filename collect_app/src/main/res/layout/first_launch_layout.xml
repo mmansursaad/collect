@@ -24,11 +24,11 @@
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_width="222dp"
+                android:layout_height="184dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/collect_app_name"
-                android:src="@drawable/odk_logo"
+                android:src="@drawable/jed_logo"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
