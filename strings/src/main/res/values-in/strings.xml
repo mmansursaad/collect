@@ -417,7 +417,7 @@
   <!--Description of how to add offline layers to the project-->
   <string name="offline_layer_dialog_description">Pilih lapisan offline yang akan digunakan untuk semua peta dalam proyek ini. Anda dapat menambahkan opsi ke daftar dengan memilih file MBTiles dari perangkat Anda, serta menghapus lapisan yang sudah ada dari daftar.</string>
   <!--Text of button user can press to get help when setting up Offline Layers-->
-  <string name="get_help_with_offline_layers">Pelajari lebih lanjut tentang menambahkan MBTiles.</string>
+  <!--<string name="get_help_with_offline_layers">Pelajari lebih lanjut tentang menambahkan MBTiles.</string>-->
   <!--Text for button that lets the user select a offline layer on their device to add-->
   <string name="add_layer">Tambah lapisan</string>
   <!--Text for button that lets the user delete a offline layer-->

@@ -423,7 +423,7 @@
   <!--Description of how to add offline layers to the project-->
   <string name="offline_layer_dialog_description">Valitse offline-taso kaikkiin karttoihin tässä projektissa. Voit lisätä vaihtoehtoja listaan valitsemalla MBTile-tiedoston laitteellasi tai poistaa aikaisemmin lisättyjä tasoja listalta.</string>
   <!--Text of button user can press to get help when setting up Offline Layers-->
-  <string name="get_help_with_offline_layers">Opi lisää MBTile-tiedostojen lisäämisestä.</string>
+  <!--<string name="get_help_with_offline_layers">Opi lisää MBTile-tiedostojen lisäämisestä.</string>-->
   <!--Text for button that lets the user select a offline layer on their device to add-->
   <string name="add_layer">Lisää tasoja</string>
   <!--Text for button that lets the user delete a offline layer-->

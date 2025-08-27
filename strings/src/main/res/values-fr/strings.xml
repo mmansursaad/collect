@@ -423,7 +423,7 @@
   <!--Description of how to add offline layers to the project-->
   <string name="offline_layer_dialog_description">Choisissez la couche hors ligne à utiliser pour toutes les cartes de ce projet. Vous pouvez ajouter des options à la liste en choisissant un fichier MBTiles de votre appareil. Vous pouvez également supprimer des couches de la liste.</string>
   <!--Text of button user can press to get help when setting up Offline Layers-->
-  <string name="get_help_with_offline_layers">En apprendre plus à propos de l\'ajout de MBTiles.</string>
+  <!--<string name="get_help_with_offline_layers">En apprendre plus à propos de l\'ajout de MBTiles.</string>-->
   <!--Text for button that lets the user select a offline layer on their device to add-->
   <string name="add_layer">Ajouter des couches</string>
   <!--Text for button that lets the user delete a offline layer-->

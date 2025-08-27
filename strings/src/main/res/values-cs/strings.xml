@@ -416,7 +416,7 @@
   <!--Description of how to add offline layers to the project-->
   <string name="offline_layer_dialog_description">Vyberte offline vrstvu, která se má použít pro všechny mapy v tomto projektu. Do seznamu můžete přidat možnosti výběrem souboru MBTiles ze zařízení a také odstranit stávající vrstvy ze seznamu.</string>
   <!--Text of button user can press to get help when setting up Offline Layers-->
-  <string name="get_help_with_offline_layers">Další informace o přidání dlaždic MBTiles.</string>
+  <!--<string name="get_help_with_offline_layers">Další informace o přidání dlaždic MBTiles.</string>-->
   <!--Text for button that lets the user select a offline layer on their device to add-->
   <string name="add_layer">Přidat vrstvy</string>
   <!--Text for button that lets the user delete a offline layer-->

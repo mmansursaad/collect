@@ -236,7 +236,7 @@ class OfflineMapLayersPickerBottomSheetDialogFragmentTest {
         onView(withId(R.id.layers)).check(matches(isDisplayed()))
     }
 
-    @Test
+    /*@Test
     fun `the 'learn more' button should be enabled during loading layers`() {
         launchFragment()
 
@@ -255,7 +255,7 @@ class OfflineMapLayersPickerBottomSheetDialogFragmentTest {
             any(),
             eq(Uri.parse("https://docs.getodk.org/collect-offline-maps/#transferring-offline-tilesets-to-devices"))
         )
-    }
+    }*/
 
     @Test
     fun `if there are no layers the 'none' option is displayed`() {

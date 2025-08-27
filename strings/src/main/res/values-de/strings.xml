@@ -423,7 +423,7 @@
   <!--Description of how to add offline layers to the project-->
   <string name="offline_layer_dialog_description">Wählen Sie die Offline-Ebene aus, die für alle Karten in diesem Projekt verwendet werden soll. Sie können der Liste Optionen hinzufügen, indem Sie eine MBTiles-Datei von Ihrem Gerät auswählen, und vorhandene Ebenen aus der Liste löschen.\"</string>
   <!--Text of button user can press to get help when setting up Offline Layers-->
-  <string name="get_help_with_offline_layers">Mehr über das Hinzufügen von MBTiles erfahren?</string>
+  <!--<string name="get_help_with_offline_layers">Mehr über das Hinzufügen von MBTiles erfahren?</string>-->
   <!--Text for button that lets the user select a offline layer on their device to add-->
   <string name="add_layer">Ebenen hinzufügen</string>
   <!--Text for button that lets the user delete a offline layer-->

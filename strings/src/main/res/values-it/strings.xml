@@ -417,7 +417,7 @@
   <!--Description of how to add offline layers to the project-->
   <string name="offline_layer_dialog_description">Selezionare il livello offline da utilizzare per tutte le mappe di questo progetto. È possibile aggiungere opzioni all\'elenco selezionando un file MBTiles dal dispositivo e cancellare i livelli esistenti dall\'elenco.</string>
   <!--Text of button user can press to get help when setting up Offline Layers-->
-  <string name="get_help_with_offline_layers">Per saperne di più sull\'aggiunta di MBTiles.</string>
+  <!--<string name="get_help_with_offline_layers">Per saperne di più sull\'aggiunta di MBTiles.</string>-->
   <!--Text for button that lets the user select a offline layer on their device to add-->
   <string name="add_layer">Aggiungi Livelli</string>
   <!--Text for button that lets the user delete a offline layer-->

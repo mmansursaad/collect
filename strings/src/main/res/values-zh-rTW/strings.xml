@@ -415,7 +415,7 @@
   <!--Description of how to add offline layers to the project-->
   <string name="offline_layer_dialog_description">選擇要用於該項目中所有地圖的離線圖層。您可從設備中選取 MBTiles 文件，添加選項到列表中，也可以從列表刪除現有圖層。</string>
   <!--Text of button user can press to get help when setting up Offline Layers-->
-  <string name="get_help_with_offline_layers">瞭解有關添加 MBTiles 的更多訊息。</string>
+  <!--<string name="get_help_with_offline_layers">瞭解有關添加 MBTiles 的更多訊息。</string>-->
   <!--Text for button that lets the user select a offline layer on their device to add-->
   <string name="add_layer">新增圖層</string>
   <!--Text for button that lets the user delete a offline layer-->

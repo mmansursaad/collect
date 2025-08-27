@@ -528,7 +528,7 @@
     <string name="offline_layer_dialog_description">Select the Cadastral layer file to use here. You can add more cadastral files to the list by importing from your device and also delete existing ones from the list.</string>
 
     <!-- Text of button user can press to get help when setting up Offline Layers -->
-    <string name="get_help_with_offline_layers">Learn more about adding MBTiles.</string>
+    <!--<string name="get_help_with_offline_layers">Learn more about adding MBTiles.</string>-->
 
     <!-- Text for button that lets the user select a offline layer on their device to add -->
     <string name="add_layer">Add layers</string>

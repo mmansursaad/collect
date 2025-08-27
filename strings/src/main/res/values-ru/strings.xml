@@ -389,7 +389,7 @@
   <!--Description of how to add offline layers to the project-->
   <string name="offline_layer_dialog_description">Выберите офлайн-слой для использования во всех картах этого проекта. Вы можете добавить параметры в список, выбрав файл MBTiles на своем устройстве, а также удалить существующие слои из списка.</string>
   <!--Text of button user can press to get help when setting up Offline Layers-->
-  <string name="get_help_with_offline_layers">Подробнее о добавлении MBTiles.</string>
+  <!--<string name="get_help_with_offline_layers">Подробнее о добавлении MBTiles.</string>-->
   <!--Text for button that lets the user select a offline layer on their device to add-->
   <string name="add_layer">Добавить слои</string>
   <!--Text for button that lets the user delete a offline layer-->
