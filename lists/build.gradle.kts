@@ -37,7 +37,7 @@ android {
         viewBinding = true
     }
 
-    namespace = "org.odk.collect.lists"
+    namespace = "com.jed.optima.lists"
 }
 
 dependencies {

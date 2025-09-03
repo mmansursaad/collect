@@ -34,7 +34,7 @@ android {
         }
     }
 
-    namespace = "org.odk.collect.testshared"
+    namespace = "com.jed.optima.testshared"
 }
 
 dependencies {

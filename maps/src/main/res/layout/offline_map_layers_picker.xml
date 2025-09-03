@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="@dimen/margin_standard" />
+        app:layout_constraintGuide_begin="52dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_end"
@@ -62,8 +62,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_standard"
-        android:text="String"
-        android:visibility="gone"
+        android:text="@string/get_help_with_offline_layers"
         android:textAppearance="?textAppearanceLabelLarge"
         android:textColor="?colorAccent"
         app:layout_constraintBottom_toBottomOf="@id/mbtiles_info_icon"
@@ -109,7 +108,7 @@
         app:layout_constraintStart_toStartOf="@id/message"
         app:layout_constraintTop_toBottomOf="@id/top_divider" />
 
-    <org.odk.collect.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+    <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
         android:id="@+id/add_layer"
         style="?materialButtonOutlinedIconStyle"
         android:layout_width="wrap_content"
@@ -128,7 +127,7 @@
         android:layout_marginBottom="@dimen/margin_extra_extra_small"
         app:layout_constraintBottom_toTopOf="@id/save" />
 
-    <org.odk.collect.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+    <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
         android:id="@+id/save"
         style="?materialButtonStyle"
         android:layout_width="wrap_content"
@@ -139,7 +138,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline_end" />
 
-    <org.odk.collect.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+    <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
         android:id="@+id/cancel"
         style="?borderlessButtonStyle"
         android:layout_width="wrap_content"

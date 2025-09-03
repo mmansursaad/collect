@@ -114,7 +114,7 @@ the specific language governing permissions and limitations under the License.
             </intent-filter>
         </activity>
 
-        <activity android:name="org.odk.collect.android.activities.CrashHandlerActivity" />
+        <activity android:name="com.jed.optima.android.activities.CrashHandlerActivity" />
 
         <activity
             android:name=".activities.ScannerWithFlashlightActivity"
@@ -126,7 +126,7 @@ the specific language governing permissions and limitations under the License.
             android:theme="@style/Theme.Collect.FormEntry"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="org.odk.collect.draw.DrawActivity"
+            android:name="com.jed.optima.draw.DrawActivity"
             android:screenOrientation="landscape" />
         <activity android:name=".activities.InstanceChooserList" />
         <activity
@@ -144,32 +144,32 @@ the specific language governing permissions and limitations under the License.
             android:name=".preferences.screens.ProjectPreferencesActivity"
             android:theme="@style/Theme.Collect.Settings" />
         <activity
-            android:name="org.odk.collect.geo.geopoint.GeoPointActivity"
+            android:name="com.jed.optima.geo.geopoint.GeoPointActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme" />
         <activity
-            android:name="org.odk.collect.geo.geopoint.GeoPointMapActivity"
+            android:name="com.jed.optima.geo.geopoint.GeoPointMapActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme" />
         <activity
-            android:name="org.odk.collect.geo.geopoly.GeoPolyActivity"
+            android:name="com.jed.optima.geo.geopoly.GeoPolyActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme" />
         <activity
-            android:name="org.odk.collect.errors.ErrorActivity"
+            android:name="com.jed.optima.errors.ErrorActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme" />
 
         <activity
-            android:name="org.odk.collect.entities.browser.EntityBrowserActivity"
+            android:name="com.jed.optima.entities.browser.EntityBrowserActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme" />
 
         <activity android:name=".activities.FormMapActivity" />
         <activity android:name=".activities.BearingActivity" />
-        <activity android:name="org.odk.collect.webpage.WebViewActivity" />
+        <activity android:name="com.jed.optima.webpage.WebViewActivity" />
         <activity
-            android:name="org.odk.collect.selfiecamera.CaptureSelfieActivity"
+            android:name="com.jed.optima.selfiecamera.CaptureSelfieActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme">
 
@@ -220,11 +220,11 @@ the specific language governing permissions and limitations under the License.
 
         <provider
             android:name=".external.FormsProvider"
-            android:authorities="org.odk.collect.android.provider.odk.forms"
+            android:authorities="com.jed.optima.android.provider.odk.forms"
             android:exported="true" />
         <provider
             android:name=".external.InstanceProvider"
-            android:authorities="org.odk.collect.android.provider.odk.instances"
+            android:authorities="com.jed.optima.android.provider.odk.instances"
             android:exported="true" />
 
         <activity-alias
@@ -271,7 +271,7 @@ the specific language governing permissions and limitations under the License.
             android:targetActivity=".activities.FormDownloadListActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="org.odk.collect.android.FORM_DOWNLOAD" />
+                <action android:name="com.jed.optima.android.FORM_DOWNLOAD" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="vnd.android.cursor.dir/vnd.odk.form" />
             </intent-filter>
@@ -294,7 +294,7 @@ the specific language governing permissions and limitations under the License.
             android:targetActivity=".instancemanagement.send.InstanceUploaderActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="org.odk.collect.android.INSTANCE_UPLOAD" />
+                <action android:name="com.jed.optima.android.INSTANCE_UPLOAD" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="vnd.android.cursor.dir/vnd.odk.instance" />
             </intent-filter>
@@ -330,7 +330,7 @@ the specific language governing permissions and limitations under the License.
                 <data android:mimeType="vnd.android.cursor.item/vnd.odk.instance" />
             </intent-filter>
         </activity>
-        <activity android:name="org.odk.collect.android.formhierarchy.FormHierarchyFragmentHostActivity" />
+        <activity android:name="com.jed.optima.android.formhierarchy.FormHierarchyFragmentHostActivity" />
     </application>
 
     <queries>

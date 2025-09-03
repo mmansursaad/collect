@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools" xmlns:oat="http://schema.getodk.org/odkAndroidTools">
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:oat="http://schema.getodk.ndroidTools">
   <!--Text for the topmost button on the main screen. It should be short and action-oriented.-->
   <!--Text for an action button on the main screen.-->
   <!--Text for an action button on the main screen.-->
@@ -482,18 +482,18 @@ N\'ukomea guhura n\'iki kibazo, wakigeza kuwa gusabye gukusanya  amakuru.</strin
     # GET BLANK FORM - ERROR MESSAGES
     ##############################################-->
   <string name="report_to_project_lead">Mu gihe ukomeje guhura niki kibazo, baza uwagusabye gutanga aya makuru</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="unreachable_error">Collect ntibasha kugera kuri seriveri kuri %s. Ese winjijemo linki neza</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="security_error">Collect ntibasha guhura na seriveri kuri %s. Ese winjijemo linki neza</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="server_error">Seriveri %1$s irerekana kode %2$s.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="invalid_response">Server 1%s yatanze amakuru atariyo </string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <!--##############################################
     # DELETE SAVED FORM
     ##############################################-->

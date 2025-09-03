@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <org.odk.collect.geo.geopoint.AccuracyStatusView
+    <com.jed.optima.geo.geopoint.AccuracyStatusView
         android:id="@+id/status_section"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/map_container"
-        android:name="org.odk.collect.maps.MapFragment"
+        android:name="com.jed.optima.maps.MapFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/status_section" />

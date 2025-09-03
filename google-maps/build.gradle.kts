@@ -7,7 +7,7 @@ plugins {
 apply(from = "../config/quality.gradle")
 
 android {
-    namespace = "org.odk.collect.googlemaps"
+    namespace = "com.jed.optima.googlemaps"
 
     compileSdk = libs.versions.compileSdk.get().toInt()
 

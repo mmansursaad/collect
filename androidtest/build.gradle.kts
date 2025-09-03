@@ -26,7 +26,7 @@ android {
             isMinifyEnabled = false
         }
     }
-    namespace = "org.odk.collect.androidtest"
+    namespace = "com.jed.optima.androidtest"
 }
 
 dependencies {

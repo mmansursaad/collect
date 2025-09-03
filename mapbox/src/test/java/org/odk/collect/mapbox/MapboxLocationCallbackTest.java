@@ -1,4 +1,4 @@
-package org.odk.collect.mapbox;
+package com.jed.optima.mapbox;
 
 import android.location.Location;
 
@@ -7,7 +7,7 @@ import com.mapbox.android.core.location.LocationEngineResult;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
-import org.odk.collect.testshared.LocationTestUtils;
+import com.jed.optima.testshared.LocationTestUtils;
 
 import static android.location.LocationManager.GPS_PROVIDER;
 import static org.hamcrest.MatcherAssert.assertThat;

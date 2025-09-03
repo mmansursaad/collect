@@ -37,7 +37,7 @@ android {
     buildFeatures {
         viewBinding = true
     }
-    namespace = "org.odk.collect.geo"
+    namespace = "com.jed.optima.geo"
 }
 
 dependencies {

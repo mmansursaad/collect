@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<resources xmlns:tools="http://schemas.android.com/tools" xmlns:oat="http://schema.getodk.org/odkAndroidTools">
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:oat="http://schema.getodk.ndroidTools">
   <!--Text for the topmost button on the main screen. It should be short and action-oriented.-->
   <string name="enter_data">Aloita uusi lomake</string>
   <!--Text for an action button on the main screen.-->
@@ -591,21 +591,21 @@
     # GET BLANK FORM - ERROR MESSAGES
     ##############################################-->
   <string name="report_to_project_lead">Jos ongelma jatkuu, ilmoita siitä tiedonkeruusta vastaavalle.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="unreachable_error">Collect ei tavoita palvelinta osoitteessa %s. Syötitkö URL:in oikein?</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="security_error">Collect ei saa turvattua yhteyttä palvelimeen %s. Syötitkö URL:in oikein?</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="server_error">Palvelin %1$s vastasi statuskoodilla %2$s.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="invalid_response">Palvelin %s antoi epäkelvon vastauksen.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="form_with_no_hash_error">Palvelin ei antanut tiivistettä tälle lomakkeelle.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="form_parsing_error">Tätä lomaketta ei voida käsitellä:</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="form_save_disk_error">Levyvirhe laitteella ladatessa tätä lomaketta.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to collect data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
   <string name="form_with_invalid_submission_error">Tällä lomakkeella on epäkelpo lähetys-URL.</string>
   <!--##############################################
     # DELETE SAVED FORM

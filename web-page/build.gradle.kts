@@ -6,7 +6,7 @@ plugins {
 apply(from = "../config/quality.gradle")
 
 android {
-    namespace = "org.odk.collect.webpage"
+    namespace = "com.jed.optima.webpage"
 
     compileSdk = libs.versions.compileSdk.get().toInt()
 

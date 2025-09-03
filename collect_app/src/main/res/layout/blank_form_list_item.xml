@@ -14,7 +14,7 @@
         android:layout_marginTop="@dimen/margin_standard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_form_state_blank" />
+        app:srcCompat="@drawable/jed_logo" />
 
     <TextView
         android:id="@+id/form_title"
@@ -22,7 +22,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_standard"
         android:layout_marginEnd="@dimen/margin_standard"
-        android:textAppearance="@style/TextAppearance.Collect.Subtitle1"
+        android:fontFamily = "sans-serif"
+        android:letterSpacing = "0.009375"
+        android:textAllCaps = "false"
+        android:textSize = "18sp"
+        android:textStyle = "bold"
         app:layout_constraintEnd_toStartOf="@+id/trailing_view"
         app:layout_constraintStart_toEndOf="@+id/image"
         app:layout_constraintTop_toTopOf="@+id/image"

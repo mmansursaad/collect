@@ -18,5 +18,5 @@ android {
         }
     }
 
-    namespace = "org.odk.collect.nbistubs"
+    namespace = "com.jed.optima.nbistubs"
 }

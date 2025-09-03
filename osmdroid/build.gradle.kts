@@ -28,7 +28,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    namespace = "org.odk.collect.osmdroid"
+    namespace = "com.jed.optima.osmdroid"
 }
 
 dependencies {

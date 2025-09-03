@@ -7,7 +7,7 @@ plugins {
 apply(from = "../config/quality.gradle")
 
 android {
-    namespace = "org.odk.collect.selfiecamera"
+    namespace = "com.jed.optima.selfiecamera"
 
     compileSdk = libs.versions.compileSdk.get().toInt()
 

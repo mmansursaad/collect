@@ -306,7 +306,7 @@ jobs:
               --device model=MediumPhone.arm,version=34,locale=en,orientation=portrait \
               --results-bucket opendatakit-collect-test-results \
               --directories-to-pull /sdcard --timeout 20m \
-              --test-targets "package org.odk.collect.android.feature.smoke"
+              --test-targets "package com.jed.optima.android.feature.smoke"
             fi
           no_output_timeout: 25m
 
@@ -336,8 +336,8 @@ jobs:
               --device model=MediumPhone.arm,version=34,locale=en,orientation=portrait \
               --results-bucket opendatakit-collect-test-results \
               --directories-to-pull /sdcard --timeout 20m \
-              --test-targets "notPackage org.odk.collect.android.regression" \
-              --test-targets "notPackage org.odk.collect.android.benchmark"
+              --test-targets "notPackage com.jed.optima.android.regression" \
+              --test-targets "notPackage com.jed.optima.android.benchmark"
             fi
           no_output_timeout: 25m
 

@@ -37,7 +37,7 @@ android {
         viewBinding = true
     }
 
-    namespace = "org.odk.collect.errors"
+    namespace = "com.jed.optima.errors"
 }
 
 dependencies {

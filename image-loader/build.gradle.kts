@@ -27,7 +27,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    namespace = "org.odk.collect.imageloader"
+    namespace = "com.jed.optima.imageloader"
 }
 
 dependencies {

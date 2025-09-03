@@ -26,7 +26,7 @@ android {
             isMinifyEnabled = false
         }
     }
-    namespace = "org.odk.collect.audioclips"
+    namespace = "com.jed.optima.audioclips"
 }
 
 dependencies {

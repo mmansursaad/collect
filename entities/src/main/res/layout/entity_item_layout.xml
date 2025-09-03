@@ -13,7 +13,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="@dimen/margin_standard" />
 
-    <org.odk.collect.material.MaterialPill
+    <com.jed.optima.material.MaterialPill
         android:id="@+id/offline_pill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,0 +1,36 @@
+package com.jed.optima.android.formlists.savedformlist
+
+import android.view.View
+import android.view.ViewGroup
+import android.widget.CheckBox
+import com.jed.optima.android.R
+import com.jed.optima.lists.RecyclerViewUtils.matchParentWidth
+import com.jed.optima.lists.selects.MultiSelectAdapter
+
+class SelectableSavedFormListItemViewHolder(parent: ViewGroup) :
+    MultiSelectAdapter.ViewHolder<com.jed.optima.forms.instances.Instance>(
+        SavedFormListItemView(parent.context)
+    ) {
+    private var selectView = itemView
+
+    init {
+        matchParentWidth()
+    }
+
+    override fun setItem(item: com.jed.optima.forms.instances.Instance) {
+        (itemView as SavedFormListItemView).setItem(item)
+    }
+
+    override fun getCheckbox(): CheckBox {
+        return (itemView as SavedFormListItemView).binding.checkbox
+    }
+
+    override fun getSelectArea(): View {
+        return selectView
+    }
+
+    fun setOnDetailsClickListener(listener: () -> Unit) {
+        selectView = itemView.findViewById(R.id.selectView)
+        selectView.setOnClickListener { listener() }
+    }
+}

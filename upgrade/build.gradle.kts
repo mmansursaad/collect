@@ -34,7 +34,7 @@ android {
         }
     }
 
-    namespace = "org.odk.collect.upgrade"
+    namespace = "com.jed.optima.upgrade"
 }
 
 dependencies {

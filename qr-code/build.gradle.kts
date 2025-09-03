@@ -6,7 +6,7 @@ plugins {
 apply(from = "../config/quality.gradle")
 
 android {
-    namespace = "org.odk.collect.qrcode"
+    namespace = "com.jed.optima.qrcode"
 
     compileSdk = libs.versions.compileSdk.get().toInt()
 

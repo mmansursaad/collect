@@ -27,7 +27,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    namespace = "org.odk.collect.analytics"
+    namespace = "com.jed.optima.analytics"
 }
 
 dependencies {

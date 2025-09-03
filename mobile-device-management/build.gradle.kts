@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "org.odk.collect.mobiledevicemanagement"
+    namespace = "com.jed.optima.mobiledevicemanagement"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

@@ -71,6 +71,7 @@ def thousandMediaFileProjectUrl = secrets.getProperty('THOUSAND_MEDIA_FILE_PROJE
 def thousandMediaFileEntityListProjectUrl = secrets.getProperty('THOUSAND_MEDIA_FILE_ENTITY_LIST_PROJECT_URL', '')
 
 android {
+    namespace "com.jed.optima.android"
     compileSdk libs.versions.compileSdk.get().toInteger()
 
     buildFeatures {
@@ -79,7 +80,7 @@ android {
     }
 
     defaultConfig {
-        applicationId('com.jed.optima')
+        applicationId('com.jed.optima.android')
         minSdk libs.versions.minSdk.get().toInteger()
         targetSdkVersion libs.versions.targetSdk.get().toInteger()
         versionCode project.hasProperty('versionCode') ? project.getProperties()['versionCode'].toInteger() : 5112
@@ -216,7 +217,7 @@ android {
         lintConfig file("$rootDir/config/lint.xml")
         xmlReport true
     }
-    namespace 'org.odk.collect.android'
+    namespace 'com.jed.optima.android'
 }
 
 configurations.all {

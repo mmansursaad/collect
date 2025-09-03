@@ -35,7 +35,7 @@ android {
     testOptions {
         unitTests.isIncludeAndroidResources = true
     }
-    namespace = "org.odk.collect.androidshared"
+    namespace = "com.jed.optima.androidshared"
 }
 
 dependencies {

@@ -28,7 +28,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    namespace = "org.odk.collect.async"
+    namespace = "com.jed.optima.async"
 }
 
 dependencies {

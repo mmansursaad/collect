@@ -38,7 +38,7 @@ android {
         }
     }
 
-    namespace = "org.odk.collect.settings"
+    namespace = "com.jed.optima.settings"
 }
 
 dependencies {

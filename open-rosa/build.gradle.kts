@@ -6,7 +6,7 @@ plugins {
 apply(from = "../config/quality.gradle")
 
 android {
-    namespace = "org.odk.collect.openrosa"
+    namespace = "com.jed.optima.openrosa"
 
     compileSdk = libs.versions.compileSdk.get().toInt()
 

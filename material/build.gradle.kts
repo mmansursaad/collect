@@ -37,7 +37,7 @@ android {
         viewBinding = true
     }
 
-    namespace = "org.odk.collect.material"
+    namespace = "com.jed.optima.material"
 }
 
 dependencies {

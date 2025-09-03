@@ -7,7 +7,7 @@ plugins {
 apply(from = "../config/quality.gradle")
 
 android {
-    namespace = "org.odk.collect.draw"
+    namespace = "com.jed.optima.draw"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

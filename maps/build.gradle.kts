@@ -38,7 +38,7 @@ android {
         viewBinding = true
     }
 
-    namespace = "org.odk.collect.maps"
+    namespace = "com.jed.optima.maps"
 }
 
 dependencies {

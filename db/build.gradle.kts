@@ -6,7 +6,7 @@ plugins {
 apply(from = "../config/quality.gradle")
 
 android {
-    namespace = "org.odk.collect.db"
+    namespace = "com.jed.optima.db"
 
     compileSdk = libs.versions.compileSdk.get().toInt()
 
