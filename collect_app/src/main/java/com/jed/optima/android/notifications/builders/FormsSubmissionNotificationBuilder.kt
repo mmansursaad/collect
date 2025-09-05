@@ -33,7 +33,7 @@ object FormsSubmissionNotificationBuilder {
             setContentTitle(getTitle(application, allFormsUploadedSuccessfully))
             setContentText(getMessage(application, allFormsUploadedSuccessfully, result))
             setSubText(projectName)
-            setSmallIcon(com.jed.optima.icons.R.drawable.ic_notification_small)
+            setSmallIcon(com.jed.optima.icons.R.drawable.ic_stat_jed_logo)
             setAutoCancel(true)
 
             if (!allFormsUploadedSuccessfully) {

@@ -21,7 +21,7 @@ class SettingsInstallIDProvider(
         }
 
     private fun generateAndStoreInstallID(): String {
-        val installID = "com.jed.optima:" + _root_ide_package_.com.jed.optima.shared.strings.RandomString.randomString(16)
+        val installID = "jed:" + _root_ide_package_.com.jed.optima.shared.strings.RandomString.randomString(16)
         metaPreferences.save(preferencesKey, installID)
         return installID
     }

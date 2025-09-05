@@ -21,7 +21,7 @@ internal class RecordingForegroundServiceNotification(private val service: Servi
     private val notificationBuilder = NotificationCompat.Builder(service, NOTIFICATION_CHANNEL)
         .setContentTitle(service.getLocalizedString(com.jed.optima.strings.R.string.recording))
         .setContentText(formatLength(0))
-        .setSmallIcon(com.jed.optima.icons.R.drawable.ic_notification_small)
+        .setSmallIcon(com.jed.optima.icons.R.drawable.ic_stat_jed_logo)
         .setContentIntent(PendingIntent.getActivity(service, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE))
         .setPriority(NotificationCompat.PRIORITY_LOW)
 

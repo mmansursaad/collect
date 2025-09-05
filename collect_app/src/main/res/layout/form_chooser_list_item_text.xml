@@ -17,10 +17,9 @@
 
     <TextView
         android:id="@+id/form_subtitle"
-        android:layout_width="1dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="1dp"
-        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_extra_extra_small"
         android:textAppearance="@style/TextAppearance.Collect.Body2.MediumEmphasis"
         tools:text="Version: 2019051301" />
 

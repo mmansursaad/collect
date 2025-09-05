@@ -166,17 +166,17 @@ permission this App can\'t record your location. Please try again when you are r
     <string name="keep_editing">Keep editing</string>
     <string name="quit_form_title">Save form?</string>
     <string name="save_explanation">You can save this form and access it from your drafts at any time.</string>
-    <!--  Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html  -->
+    <!--  Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormaFt.html  -->
     <string name="save_explanation_with_last_saved">\'This form was last saved on\' EEE, MMM dd, yyyy \'at\' HH:mm\'. Save as draft to keep changes.\'</string>
     <string name="quit_form_continue_title">Continue editing?</string>
-    <string name="discard_form_warning">If you discard form, you will lose any changes you have made so far.</string>
+    <string name="discard_form_warning">If you discard form, you will lose any inputs you have made so far.</string>
     <!--  Please format date appropriately for your language: http://docs.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html  -->
     <string name="discard_changes_warning">\'This form was last saved on\' EEE, MMM dd, yyyy \'at\' HH:mm\'. If you discard changes, you will lose any changes you have made since then.\'</string>
     <string name="saving_form">Saving Form</string>
-    <string name="survey_saving_validating_message">Validating answers…</string>
+    <string name="survey_saving_validating_message">Validating entries…</string>
     <string name="survey_saving_collecting_message">Collecting data…</string>
-    <string name="survey_saving_saving_message">Saving to SD card…</string>
-    <string name="survey_saving_finalizing_message">Finalizing to SD card…</string>
+    <string name="survey_saving_saving_message">Saving to memory…</string>
+    <string name="survey_saving_finalizing_message">Finalizing to memory…</string>
     <string name="survey_saving_encrypting_message">Encrypting data…</string>
     <string name="not_exactly_one_record_for_this_instance">Not exactly one record for this instance!</string>
     <string name="not_exactly_one_blank_form_for_this_form_id">Not exactly one blank form matches this jr_form_id.</string>
@@ -497,7 +497,7 @@ permission this App can\'t record your location. Please try again when you are r
     <!--  Displayed in the form filling menu when a form has background location disabled  -->
     <string name="track_location_off">Track location: off</string>
     <string name="background_location_disabled">This form wants to track your location but tracking is disabled. Please enable in the %1$s menu above.</string>
-    <string name="background_location_enabled">This form tracks your location. You can disable tracking in the %1$s menu above.</string>
+    <string name="background_location_enabled">This form automatically tracks your location.</string>
     <!--  Text of an option available when filling out a form. Tapping this option checks the form for constraint or required violations and navigates the user back to the first field with an error.  -->
     <string name="validate">Check for errors</string>
     <!--  %1$s is the time taken so far in hh:mm:ss  -->
@@ -560,7 +560,7 @@ permission this App can\'t record your location. Please try again when you are r
     <string name="collection_status_auto_minutes">Points entered: %1$d (recording every %2$d min)</string>
     <string name="collection_status_auto_seconds_accuracy">Points entered: %1$d (recording every %2$d sec, accuracy %3$d m)</string>
     <string name="collection_status_auto_minutes_accuracy">Points entered: %1$d (recording every %2$d min, accuracy %3$d m)</string>
-    <string name="geopoint_instruction">Long press to place mark or tap add marker button</string>
+    <string name="geopoint_instruction">Long press on a customer premise to capture point or tap on "+" icon</string>
     <string name="geopoint_no_draggable_instruction">Tap add marker button.</string>
     <string name="discard">Discard</string>
     <string name="select_item_count">%s: %d (%d shown on map)</string>

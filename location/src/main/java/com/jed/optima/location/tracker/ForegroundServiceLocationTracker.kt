@@ -101,7 +101,7 @@ class LocationTrackerService : Service(), _root_ide_package_.com.jed.optima.loca
 
     private fun createNotification(): Notification {
         val notification = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL)
-            .setSmallIcon(com.jed.optima.icons.R.drawable.ic_notification_small)
+            .setSmallIcon(com.jed.optima.icons.R.drawable.ic_stat_jed_logo)
             .setContentTitle(getLocalizedString(com.jed.optima.strings.R.string.location_tracking_notification_title))
             .setPriority(NotificationCompat.PRIORITY_LOW)
             .setContentIntent(createNotificationIntent())

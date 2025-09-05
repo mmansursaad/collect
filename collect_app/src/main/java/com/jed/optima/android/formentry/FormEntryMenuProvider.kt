@@ -8,6 +8,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.MenuProvider
+import androidx.core.view.isVisible
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.jed.optima.android.R
 import com.jed.optima.android.formhierarchy.FormHierarchyFragmentHostActivity
@@ -69,6 +70,9 @@ class FormEntryMenuProvider(
                 activity.getLocalizedString(com.jed.optima.strings.R.string.track_location_off)
             }
         }
+
+        //Make track location menu invisible
+        menu.findItem(R.id.track_location)?.isVisible = false
 
         menu.findItem(R.id.menu_add_repeat).isVisible = formEntryViewModel.canAddRepeat()
 

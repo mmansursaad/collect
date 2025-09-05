@@ -51,7 +51,7 @@ object FormUpdatesDownloadedNotificationBuilder {
             setContentTitle(title)
             setContentText(message)
             setSubText(projectName)
-            setSmallIcon(com.jed.optima.icons.R.drawable.ic_notification_small)
+            setSmallIcon(com.jed.optima.icons.R.drawable.ic_stat_jed_logo)
             setAutoCancel(true)
 
             if (!allFormsDownloadedSuccessfully) {

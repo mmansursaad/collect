@@ -21,16 +21,14 @@ class BlankFormListItemView(context: Context) : FrameLayout(context) {
                 string.version_number,
                 item.formVersion
             )
-        //binding.formVersion.visibility = GONE
-        binding.formVersion.visibility =
-            if (item.formVersion.isNotBlank()) VISIBLE else GONE
+        binding.formVersion.visibility = GONE //binding.formVersion.visibility = if (item.formVersion.isNotBlank()) VISIBLE else GONE
 
         binding.formId.text =
             binding.root.context.getString(
                 string.id_number,
                 item.formId
             )
-        //binding.formId.visibility = GONE
+        binding.formId.visibility = GONE
 
         binding.formHistory.text = try {
             if (item.dateOfLastDetectedAttachmentsUpdate != null) {

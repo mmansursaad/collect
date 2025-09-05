@@ -43,8 +43,8 @@ class SavedFormListViewModel(
         .map { instances -> instances.filter { instance -> instance.deletedDate == null } }
         .combine(_sortOrder) { instances, order ->
             when (order) {
-                SortOrder.NAME_DESC -> instances.sortedByDescending { it.userVisibleInstanceName().lowercase() }
                 SortOrder.DATE_DESC -> instances.sortedByDescending { it.lastStatusChangeDate }
+                SortOrder.NAME_DESC -> instances.sortedByDescending { it.userVisibleInstanceName().lowercase() }
                 SortOrder.NAME_ASC -> instances.sortedBy { it.userVisibleInstanceName().lowercase() }
                 SortOrder.DATE_ASC -> instances.sortedBy { it.lastStatusChangeDate }
             }
@@ -74,9 +74,9 @@ class SavedFormListViewModel(
     }
 
     enum class SortOrder {
+        DATE_DESC,
         NAME_ASC,
         NAME_DESC,
-        DATE_DESC,
         DATE_ASC
     }
 }

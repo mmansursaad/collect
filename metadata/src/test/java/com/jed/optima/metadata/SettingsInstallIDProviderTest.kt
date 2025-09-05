@@ -23,7 +23,7 @@ class SettingsInstallIDProviderTest {
 
     @Test
     fun returnsValueWithPrefix() {
-        assertThat(provider.installID, startsWith("com.jed.optima:"))
+        assertThat(provider.installID, startsWith("jed.optima:"))
     }
 
     @Test

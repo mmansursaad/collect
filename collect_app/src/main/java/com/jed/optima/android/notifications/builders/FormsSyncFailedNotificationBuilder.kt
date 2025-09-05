@@ -25,7 +25,7 @@ object FormsSyncFailedNotificationBuilder {
             setContentIntent(contentIntent)
             setContentTitle(application.getLocalizedString(com.jed.optima.strings.R.string.form_update_error))
             setSubText(projectName)
-            setSmallIcon(com.jed.optima.icons.R.drawable.ic_notification_small)
+            setSmallIcon(com.jed.optima.icons.R.drawable.ic_stat_jed_logo)
             setAutoCancel(true)
             addAction(
                 R.drawable.ic_outline_info_small,
