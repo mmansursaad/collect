@@ -29,7 +29,7 @@ class HtmlPrinter {
 
     private fun createWebPrintJob(context: Context, webView: WebView) {
         (context.getSystemService(Context.PRINT_SERVICE) as? PrintManager)?.let { printManager ->
-            val jobName = "ODK print"
+            val jobName = "File"
             val printAdapter = webView.createPrintDocumentAdapter(jobName)
             printManager.print(
                 jobName,
