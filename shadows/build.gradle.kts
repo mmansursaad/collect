@@ -6,7 +6,7 @@ plugins {
 apply(from = "../config/quality.gradle")
 
 android {
-    namespace = "com.jed.optima.shadows"
+    namespace = "com.yedc.shadows"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

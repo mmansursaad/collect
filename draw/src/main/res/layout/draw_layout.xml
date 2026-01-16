@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-    <com.jed.optima.draw.DrawView
+    <com.yedc.draw.DrawView
         android:id="@+id/drawView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-    </com.jed.optima.draw.DrawView>
+    </com.yedc.draw.DrawView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_clear"

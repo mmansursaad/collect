@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+    <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
         android:id="@+id/bearing_button"
         style="?widgetButtonIconQuestionWidgetStyle"
         android:text="@string/get_bearing"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         app:icon="@drawable/ic_baseline_explore_white_24" />
 
-    <com.jed.optima.android.views.WidgetAnswerText
+    <com.yedc.android.views.WidgetAnswerText
         android:id="@+id/widget_answer_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

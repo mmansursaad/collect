@@ -6,7 +6,7 @@ plugins {
 apply(from = "../config/quality.gradle")
 
 android {
-    namespace = "com.jed.optima.crashhandler"
+    namespace = "com.yedc.crashhandler"
 
     compileSdk = libs.versions.compileSdk.get().toInt()
 

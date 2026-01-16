@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeTextInputEditText
+    <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeTextInputEditText
         android:id="@+id/answer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

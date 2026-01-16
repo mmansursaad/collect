@@ -529,18 +529,18 @@
     # GET BLANK FORM - ERROR MESSAGES
     ##############################################-->
   <string name="report_to_project_lead">إذا استمرت هذه المشكلة، فأبلغ عنها الشخص الذي طلب منك جمع البيانات.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="unreachable_error">التطبيق لا يمكن أن يصل إلى الخادم في %s. هل أدخلت عنوان URL بشكل صحيح؟</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="security_error">التطبيق لا يمكن أن يصل إلى الخادم في %s بشكل آمن. هل أدخلت عنوان URL بشكل صحيح؟</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="server_error">الخادم %1$s ارجع خطأ بكود %2$s</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="invalid_response">قدم الخادم %s بإرجاع استجابة غير صالحة.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <!--##############################################
     # DELETE SAVED FORM
     ##############################################-->

@@ -32,7 +32,7 @@ android {
             isIncludeAndroidResources = true
         }
     }
-    namespace = "com.jed.optima.permissions"
+    namespace = "com.yedc.permissions"
 }
 
 dependencies {

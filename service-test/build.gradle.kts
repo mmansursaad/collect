@@ -34,7 +34,7 @@ android {
         }
     }
 
-    namespace = "com.jed.optima.servicetest"
+    namespace = "com.yedc.servicetest"
 }
 
 dependencies {

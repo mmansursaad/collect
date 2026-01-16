@@ -1,8 +1,8 @@
-package com.jed.optima.mapbox
+package com.yedc.mapbox
 
 import com.mapbox.android.core.location.LocationEngineCallback
 import com.mapbox.android.core.location.LocationEngineResult
-import com.jed.optima.location.LocationUtils.sanitizeAccuracy
+import com.yedc.location.LocationUtils.sanitizeAccuracy
 import java.lang.Exception
 import java.lang.ref.WeakReference
 

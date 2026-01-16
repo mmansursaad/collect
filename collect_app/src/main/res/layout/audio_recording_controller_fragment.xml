@@ -35,7 +35,7 @@
             android:text="@string/recording"
             android:textColor="?colorOnSurface"/>
 
-        <com.jed.optima.android.audio.VolumeBar
+        <com.yedc.android.audio.VolumeBar
             android:id="@+id/volume_bar"
             android:layout_width="match_parent"
             android:layout_height="8dp"
@@ -49,7 +49,7 @@
         android:layout_marginStart="@dimen/margin_standard"
         android:orientation="horizontal">
 
-        <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+        <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
             android:id="@+id/pause_recording"
             style="?materialIconButtonOutlinedStyle"
             android:layout_width="wrap_content"
@@ -58,7 +58,7 @@
             android:contentDescription="@string/pause_recording"
             app:icon="@drawable/ic_pause_24dp" />
 
-        <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+        <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
             android:id="@+id/stop_recording"
             style="@style/Widget.Material3.Button.IconButton.Filled"
             android:layout_width="wrap_content"

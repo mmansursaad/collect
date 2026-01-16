@@ -34,7 +34,7 @@ android {
         }
     }
 
-    namespace = "com.jed.optima.upgrade"
+    namespace = "com.yedc.upgrade"
 }
 
 dependencies {

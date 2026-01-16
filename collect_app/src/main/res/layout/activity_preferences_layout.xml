@@ -7,7 +7,7 @@
     <include layout="@layout/app_bar_layout"/>
 
     <androidx.fragment.app.FragmentContainerView
-        android:name="com.jed.optima.android.preferences.screens.ProjectPreferencesFragment"
+        android:name="com.yedc.android.preferences.screens.ProjectPreferencesFragment"
         android:id="@+id/preferences_fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

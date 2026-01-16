@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+    <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
         android:id="@+id/launch_app_button"
         style="?widgetButtonIconQuestionWidgetStyle"
         android:text="@string/launch_app"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         app:icon="@drawable/ic_baseline_open_in_new_white_24" />
 
-    <com.jed.optima.android.views.WidgetAnswerText
+    <com.yedc.android.views.WidgetAnswerText
         android:id="@+id/widget_answer_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

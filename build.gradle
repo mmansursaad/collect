@@ -105,8 +105,8 @@ tasks.register('testLab') {
                     '--device', 'model=MediumPhone.arm,version=34,locale=en,orientation=portrait',
                     '--timeout', '10m',
                     '--directories-to-pull', '/sdcard',
-                    '--test-targets', "notPackage com.jed.optima.android.regression",
-                    '--test-targets', "notPackage com.jed.optima.android.benchmark"
+                    '--test-targets', "notPackage com.yedc.android.regression",
+                    '--test-targets', "notPackage com.yedc.android.benchmark"
             )
         }
     }

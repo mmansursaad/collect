@@ -32,7 +32,7 @@ android {
             isIncludeAndroidResources = true
         }
     }
-    namespace = "com.jed.optima.externalapp"
+    namespace = "com.yedc.externalapp"
 }
 
 dependencies {

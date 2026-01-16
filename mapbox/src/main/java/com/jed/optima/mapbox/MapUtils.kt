@@ -1,4 +1,4 @@
-package com.jed.optima.mapbox
+package com.yedc.mapbox
 
 import android.content.Context
 import com.mapbox.geojson.Point
@@ -6,12 +6,12 @@ import com.mapbox.maps.extension.style.layers.properties.generated.IconAnchor
 import com.mapbox.maps.plugin.annotation.generated.PointAnnotation
 import com.mapbox.maps.plugin.annotation.generated.PointAnnotationManager
 import com.mapbox.maps.plugin.annotation.generated.PointAnnotationOptions
-import com.jed.optima.maps.LineDescription
-import com.jed.optima.maps.MapFragment
-import com.jed.optima.maps.MapPoint
-import com.jed.optima.maps.markers.MarkerDescription
-import com.jed.optima.maps.markers.MarkerIconCreator
-import com.jed.optima.maps.markers.MarkerIconDescription
+import com.yedc.maps.LineDescription
+import com.yedc.maps.MapFragment
+import com.yedc.maps.MapPoint
+import com.yedc.maps.markers.MarkerDescription
+import com.yedc.maps.markers.MarkerIconCreator
+import com.yedc.maps.markers.MarkerIconDescription
 
 object MapUtils {
     fun createPointAnnotation(

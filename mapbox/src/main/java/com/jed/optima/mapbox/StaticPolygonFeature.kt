@@ -1,12 +1,12 @@
-package com.jed.optima.mapbox
+package com.yedc.mapbox
 
 import com.mapbox.geojson.Point
 import com.mapbox.maps.plugin.annotation.generated.OnPolygonAnnotationClickListener
 import com.mapbox.maps.plugin.annotation.generated.PolygonAnnotation
 import com.mapbox.maps.plugin.annotation.generated.PolygonAnnotationManager
 import com.mapbox.maps.plugin.annotation.generated.PolygonAnnotationOptions
-import com.jed.optima.maps.MapFragment
-import com.jed.optima.maps.PolygonDescription
+import com.yedc.maps.MapFragment
+import com.yedc.maps.PolygonDescription
 
 class StaticPolygonFeature(
     private val polygonAnnotationManager: PolygonAnnotationManager,

@@ -28,7 +28,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    namespace = "com.jed.optima.mapbox"
+    namespace = "com.yedc.mapbox"
 }
 
 dependencies {

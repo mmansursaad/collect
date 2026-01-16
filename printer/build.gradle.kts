@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.jed.optima.printer"
+    namespace = "com.yedc.printer"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

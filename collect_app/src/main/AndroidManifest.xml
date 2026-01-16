@@ -78,7 +78,7 @@ the specific language governing permissions and limitations under the License.
         android:xlargeScreens="true" />
 
     <application
-        android:name=".application.Collect"
+        android:name="com.yedc.android.application.Collect"
         android:allowBackup="true"
         android:icon="@drawable/notes"
         android:installLocation="auto"
@@ -114,62 +114,62 @@ the specific language governing permissions and limitations under the License.
             </intent-filter>
         </activity>
 
-        <activity android:name="com.jed.optima.android.activities.CrashHandlerActivity" />
+        <activity android:name="com.yedc.android.activities.CrashHandlerActivity" />
 
         <activity
-            android:name=".activities.ScannerWithFlashlightActivity"
+            android:name="com.yedc.android.activities.ScannerWithFlashlightActivity"
             android:screenOrientation="portrait"
             android:stateNotNeeded="true"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".activities.FormFillingActivity"
+            android:name="com.yedc.android.activities.FormFillingActivity"
             android:theme="@style/Theme.Collect.FormEntry"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.jed.optima.draw.DrawActivity"
+            android:name="com.yedc.draw.DrawActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".activities.InstanceChooserList" />
+        <activity android:name="com.yedc.android.activities.InstanceChooserList" />
         <activity
             android:name=".formlists.blankformlist.BlankFormListActivity"
             android:launchMode="singleTop" />
-        <activity android:name=".activities.FormDownloadListActivity" />
+        <activity android:name="com.yedc.android.activities.FormDownloadListActivity" />
         <activity android:name=".activities.DeleteFormsActivity" />
         <activity
-            android:name=".instancemanagement.send.InstanceUploaderListActivity"
+            android:name="com.yedc.android.instancemanagement.send.InstanceUploaderListActivity"
             android:configChanges="orientation|screenSize" />
-        <activity android:name=".instancemanagement.send.InstanceUploaderActivity" />
+        <activity android:name="com.yedc.android.instancemanagement.send.InstanceUploaderActivity" />
         <activity android:name=".activities.AboutActivity" />
         <activity android:name=".configure.qr.QRCodeTabsActivity" />
         <activity
             android:name=".preferences.screens.ProjectPreferencesActivity"
             android:theme="@style/Theme.Collect.Settings" />
         <activity
-            android:name="com.jed.optima.geo.geopoint.GeoPointActivity"
+            android:name="com.yedc.geo.geopoint.GeoPointActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme" />
         <activity
-            android:name="com.jed.optima.geo.geopoint.GeoPointMapActivity"
+            android:name="com.yedc.geo.geopoint.GeoPointMapActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme" />
         <activity
-            android:name="com.jed.optima.geo.geopoly.GeoPolyActivity"
+            android:name="com.yedc.geo.geopoly.GeoPolyActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme" />
         <activity
-            android:name="com.jed.optima.errors.ErrorActivity"
+            android:name="com.yedc.errors.ErrorActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme" />
 
         <activity
-            android:name="com.jed.optima.entities.browser.EntityBrowserActivity"
+            android:name="com.yedc.entities.browser.EntityBrowserActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme" />
 
         <activity android:name=".activities.FormMapActivity" />
-        <activity android:name=".activities.BearingActivity" />
-        <activity android:name="com.jed.optima.webpage.WebViewActivity" />
+        <activity android:name="com.yedc.android.activities.BearingActivity" />
+        <activity android:name="com.yedc.webpage.WebViewActivity" />
         <activity
-            android:name="com.jed.optima.selfiecamera.CaptureSelfieActivity"
+            android:name="com.yedc.selfiecamera.CaptureSelfieActivity"
             android:theme="@style/Theme.Collect"
             tools:replace="android:theme">
 
@@ -219,12 +219,12 @@ the specific language governing permissions and limitations under the License.
          -->
 
         <provider
-            android:name=".external.FormsProvider"
-            android:authorities="com.jed.optima.android.provider.odk.forms"
+            android:name="com.yedc.android.external.FormsProvider"
+            android:authorities="com.yedc.android.provider.odk.forms"
             android:exported="true" />
         <provider
-            android:name=".external.InstanceProvider"
-            android:authorities="com.jed.optima.android.provider.odk.instances"
+            android:name="com.yedc.android.external.InstanceProvider"
+            android:authorities="com.yedc.android.provider.odk.instances"
             android:exported="true" />
 
         <activity-alias
@@ -236,7 +236,7 @@ the specific language governing permissions and limitations under the License.
 
         <activity-alias
             android:name=".activities.InstanceChooserList"
-            android:targetActivity=".activities.InstanceChooserList"
+            android:targetActivity="com.yedc.android.activities.InstanceChooserList"
             android:exported="true"
             tools:ignore="AppLinkUrlError">
             <intent-filter>
@@ -268,10 +268,10 @@ the specific language governing permissions and limitations under the License.
 
         <activity-alias
             android:name=".activities.FormDownloadList"
-            android:targetActivity=".activities.FormDownloadListActivity"
+            android:targetActivity="com.yedc.android.activities.FormDownloadListActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.jed.optima.android.FORM_DOWNLOAD" />
+                <action android:name="com.yedc.android.FORM_DOWNLOAD" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="vnd.android.cursor.dir/vnd.odk.form" />
             </intent-filter>
@@ -279,7 +279,7 @@ the specific language governing permissions and limitations under the License.
 
         <activity-alias
             android:name=".activities.InstanceUploaderList"
-            android:targetActivity=".instancemanagement.send.InstanceUploaderListActivity"
+            android:targetActivity="com.yedc.android.instancemanagement.send.InstanceUploaderListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -291,10 +291,10 @@ the specific language governing permissions and limitations under the License.
 
         <activity-alias
             android:name=".activities.InstanceUploaderActivity"
-            android:targetActivity=".instancemanagement.send.InstanceUploaderActivity"
+            android:targetActivity="com.yedc.android.instancemanagement.send.InstanceUploaderActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.jed.optima.android.INSTANCE_UPLOAD" />
+                <action android:name="com.yedc.android.INSTANCE_UPLOAD" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="vnd.android.cursor.dir/vnd.odk.instance" />
             </intent-filter>
@@ -330,7 +330,7 @@ the specific language governing permissions and limitations under the License.
                 <data android:mimeType="vnd.android.cursor.item/vnd.odk.instance" />
             </intent-filter>
         </activity>
-        <activity android:name="com.jed.optima.android.formhierarchy.FormHierarchyFragmentHostActivity" />
+        <activity android:name="com.yedc.android.formhierarchy.FormHierarchyFragmentHostActivity" />
     </application>
 
     <queries>

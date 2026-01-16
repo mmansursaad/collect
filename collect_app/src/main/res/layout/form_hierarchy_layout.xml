@@ -50,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+        <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
             android:id="@+id/jumpBeginningButton"
             style="?materialButtonOutlinedStyle"
             android:layout_width="0dp"
@@ -61,7 +61,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+        <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
             android:id="@+id/jumpEndButton"
             style="?materialButtonOutlinedStyle"
             android:layout_width="0dp"
@@ -73,7 +73,7 @@
             app:layout_constraintStart_toEndOf="@id/jumpBeginningButton"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+        <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
             android:id="@+id/exitButton"
             style="?materialButtonOutlinedStyle"
             android:layout_width="0dp"
@@ -87,7 +87,7 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.jed.optima.lists.EmptyListView
+    <com.yedc.lists.EmptyListView
         android:id="@android:id/empty"
         android:layout_width="0dp"
         android:layout_height="0dp"

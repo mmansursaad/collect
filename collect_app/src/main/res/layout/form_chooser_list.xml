@@ -15,7 +15,7 @@
         android:divider="@drawable/list_item_divider"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    <com.jed.optima.lists.EmptyListView
+    <com.yedc.lists.EmptyListView
         android:id="@android:id/empty"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -632,21 +632,21 @@ permission this App can\'t record your location. Please try again when you are r
                 ##############################################
                    -->
     <string name="report_to_project_lead">If you keep having this problem, report it to the person who asked you to collect data.</string>
-    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data    -->
+    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
     <string name="unreachable_error">Collect can\'t reach the server at %s. Did you enter the URL correctly?</string>
-    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data    -->
+    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
     <string name="security_error">Collect can\'t connect securely to the server at %s. Did you enter the URL correctly?</string>
-    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data    -->
+    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
     <string name="server_error">The server %1$s returned status code %2$s.</string>
-    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data    -->
+    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
     <string name="invalid_response">The server %s provided an invalid response.</string>
-    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data    -->
+    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
     <string name="form_with_no_hash_error">The server did not provide a hash for this form.</string>
-    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data    -->
+    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
     <string name="form_parsing_error">This form cannot be processed:</string>
-    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data    -->
+    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
     <string name="form_save_disk_error">A disk error occurred on device while downloading this form.</string>
-    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data    -->
+    <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
     <string name="form_with_invalid_submission_error">This form has an invalid submission URL.</string>
     <!--
                 ##############################################
@@ -1027,7 +1027,7 @@ password
                 ##############################################
                    -->
     <!--    Error shown when a user tries to open a form that's in a different project    -->
-    <string name="wrong_project_selected_for_form">To open this form, you must first open JED Optima and switch to the account that contains it.</string>
+    <string name="wrong_project_selected_for_form">To open this form, you must first open YEDC and switch to the account that contains it.</string>
     <!--    Error shown when a user tries to open a form when there are no projects    -->
     <string name="app_not_configured">App has not been configured. Try to open the App and configure it.\n\nIf you tapped on a shortcut, you might need to recreate it after configuring ODK Collect.</string>
     <!--    Displayed when form filling is attempted to be launched by intent but the intent URI mime type is unknown    -->

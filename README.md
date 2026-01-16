@@ -121,7 +121,7 @@ When you first run Collect, it is set to download forms from [https://demo.getod
 
 1. Once you have the XForm, use [adb](https://developer.android.com/studio/command-line/adb.html) to push the form to your device (after [enabling USB debugging](https://www.kingoapp.com/root-tutorials/how-to-enable-usb-debugging-mode-on-android.htm)) or emulator.
 	```
-	adb push my_form.xml /sdcard/Android/data/com.jed.optima.android/files/projects/{project-id}/forms
+	adb push my_form.xml /sdcard/Android/data/com.yedc.android/files/projects/{project-id}/forms
 	```
 
 If you are using the demo project, kindly replace `{project_id}` with `DEMO`
@@ -284,7 +284,7 @@ Maintainers keep a folder with a clean checkout of the code and use [jenv.be](ht
 1. Download the `.tar` for relevant release tag
 2. Extract `.local-m2` into the project directory:
     ```bash
-    tar -xf maven.tar -C <com.jed.optima project directory>
+    tar -xf maven.tar -C <com.yedc project directory>
     ```
    
 The project will now be able to fetch dependencies that are no longer available (but were used to compile the release) from the `.local-m2` Maven repo.

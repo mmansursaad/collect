@@ -26,7 +26,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    namespace = "com.jed.optima.strings"
+    namespace = "com.yedc.strings"
 
     testOptions {
         unitTests {

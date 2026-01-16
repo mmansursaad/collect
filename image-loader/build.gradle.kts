@@ -27,7 +27,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    namespace = "com.jed.optima.imageloader"
+    namespace = "com.yedc.imageloader"
 }
 
 dependencies {

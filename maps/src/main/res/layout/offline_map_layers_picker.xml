@@ -108,7 +108,7 @@
         app:layout_constraintStart_toStartOf="@id/message"
         app:layout_constraintTop_toBottomOf="@id/top_divider" />
 
-    <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+    <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
         android:id="@+id/add_layer"
         style="?materialButtonOutlinedIconStyle"
         android:layout_width="wrap_content"
@@ -127,7 +127,7 @@
         android:layout_marginBottom="@dimen/margin_extra_extra_small"
         app:layout_constraintBottom_toTopOf="@id/save" />
 
-    <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+    <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
         android:id="@+id/save"
         style="?materialButtonStyle"
         android:layout_width="wrap_content"
@@ -138,7 +138,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/guideline_end" />
 
-    <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+    <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
         android:id="@+id/cancel"
         style="?borderlessButtonStyle"
         android:layout_width="wrap_content"

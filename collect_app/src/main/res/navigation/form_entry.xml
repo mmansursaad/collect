@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/hierarchy"
-        android:name="com.jed.optima.android.formhierarchy.FormHierarchyFragment">
+        android:name="com.yedc.android.formhierarchy.FormHierarchyFragment">
         <argument
             android:name="new_edit"
             app:argType="boolean" />

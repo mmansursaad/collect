@@ -34,7 +34,7 @@ android {
         }
     }
 
-    namespace = "com.jed.optima.testshared"
+    namespace = "com.yedc.testshared"
 }
 
 dependencies {

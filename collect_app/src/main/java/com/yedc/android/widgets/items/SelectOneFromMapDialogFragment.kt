@@ -1,0 +1,252 @@
+package com.yedc.android.widgets.items
+
+import android.content.Context
+import android.content.res.Resources
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.activity.ComponentDialog
+import androidx.appcompat.widget.Toolbar
+import androidx.fragment.app.FragmentResultListener
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModelProvider
+import org.javarosa.core.model.FormIndex
+import org.javarosa.core.model.SelectChoice
+import org.javarosa.core.model.data.SelectOneData
+import org.javarosa.core.model.instance.geojson.GeojsonFeature
+import org.javarosa.form.api.FormEntryPrompt
+import com.yedc.android.R
+import com.yedc.android.databinding.SelectOneFromMapDialogLayoutBinding
+import com.yedc.android.injection.DaggerUtils
+import com.yedc.android.utilities.Appearances
+import com.yedc.android.widgets.utilities.GeoWidgetUtils
+import com.yedc.androidshared.livedata.MutableNonNullLiveData
+import com.yedc.androidshared.livedata.NonNullLiveData
+import com.yedc.androidshared.ui.FragmentFactoryBuilder
+import com.yedc.async.Scheduler
+import com.yedc.geo.selection.IconifiedText
+import com.yedc.geo.selection.MappableSelectItem
+import com.yedc.geo.selection.SelectionMapData
+import com.yedc.geo.selection.SelectionMapFragment
+import com.yedc.geo.selection.SelectionMapFragment.Companion.REQUEST_SELECT_ITEM
+import javax.inject.Inject
+
+class SelectOneFromMapDialogFragment(private val viewModelFactory: ViewModelProvider.Factory) :
+    com.yedc.material.MaterialFullScreenDialogFragment(), FragmentResultListener {
+
+    @Inject
+    lateinit var scheduler: Scheduler
+
+    private val formEntryViewModel: _root_ide_package_.com.yedc.android.formentry.FormEntryViewModel by activityViewModels { viewModelFactory }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        DaggerUtils.getComponent(context).inject(this)
+
+        val formIndex = requireArguments().getSerializable(ARG_FORM_INDEX) as FormIndex
+        val selectedIndex = requireArguments().getSerializable(ARG_SELECTED_INDEX) as Int?
+        val prompt = formEntryViewModel.getQuestionPrompt(formIndex)
+        val selectionMapData = SelectChoicesMapData(resources, scheduler, prompt, selectedIndex)
+
+        childFragmentManager.fragmentFactory = FragmentFactoryBuilder()
+            .forClass(SelectionMapFragment::class.java) {
+                SelectionMapFragment(
+                    selectionMapData,
+                    skipSummary = Appearances.hasAppearance(prompt, Appearances.QUICK),
+                    zoomToFitItems = false,
+                    showNewItemButton = false,
+                    onBackPressedDispatcher = { (requireDialog() as ComponentDialog).onBackPressedDispatcher }
+                )
+            }
+            .build()
+
+        childFragmentManager.setFragmentResultListener(REQUEST_SELECT_ITEM, this, this)
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        val binding = SelectOneFromMapDialogLayoutBinding.inflate(inflater)
+        return binding.root
+    }
+
+    override fun getToolbar(): Toolbar? {
+        return null
+    }
+
+    override fun onBackPressed() {
+        dismiss()
+    }
+
+    override fun onCloseClicked() {
+        // No toolbar so not relevant
+    }
+
+    override fun onFragmentResult(requestKey: String, result: Bundle) {
+        val selectedIndex = result.getLong(SelectionMapFragment.RESULT_SELECTED_ITEM).toInt()
+        val formIndex = requireArguments().getSerializable(ARG_FORM_INDEX) as FormIndex
+        val prompt = formEntryViewModel.getQuestionPrompt(formIndex)
+        val selectedChoice = prompt.selectChoices[selectedIndex]
+        formEntryViewModel.answerQuestion(formIndex, SelectOneData(selectedChoice.selection()))
+        dismiss()
+    }
+
+    companion object {
+        const val ARG_FORM_INDEX = "form_index"
+        const val ARG_SELECTED_INDEX = "selected_index"
+    }
+}
+
+internal class SelectChoicesMapData(
+    private val resources: Resources,
+    scheduler: Scheduler,
+    prompt: FormEntryPrompt,
+    private val selectedIndex: Int?
+) : SelectionMapData {
+
+    private val mapTitle = MutableLiveData(prompt.longText)
+    private val itemCount = MutableNonNullLiveData(0)
+    private val items = MutableLiveData<List<MappableSelectItem>?>(null)
+    private val isLoading = MutableNonNullLiveData(true)
+
+    init {
+        isLoading.value = true
+
+        scheduler.immediate(
+            background = {
+                loadItemsFromChoices(prompt.selectChoices, prompt)
+            },
+            foreground = {
+                itemCount.value = prompt.selectChoices.size
+                items.value = it
+                isLoading.value = false
+            }
+        )
+    }
+
+    private fun loadItemsFromChoices(
+        selectChoices: MutableList<SelectChoice>,
+        prompt: FormEntryPrompt
+    ): List<MappableSelectItem> {
+        return selectChoices.foldIndexed(emptyList()) { index, list, selectChoice ->
+            val geometry = selectChoice.getChild(GEOMETRY)
+
+            if (geometry != null) {
+                try {
+                    val points = GeoWidgetUtils.parseGeometry(geometry)
+                    if (points.isNotEmpty()) {
+                        val withinBounds = points.all {
+                            GeoWidgetUtils.isWithinMapBounds(it)
+                        }
+
+                        if (withinBounds) {
+                            val properties = selectChoice.additionalChildren.filter {
+                                it.first != GeojsonFeature.GEOMETRY_CHILD_NAME
+                            }.map {
+                                IconifiedText(null, "${it.first}: ${it.second}")
+                            }
+
+                            if (points.size == 1) {
+                                val markerColor =
+                                    getPropertyValue(selectChoice, MARKER_COLOR)
+                                val markerSymbol =
+                                    getPropertyValue(selectChoice, MARKER_SYMBOL)
+
+                                list + MappableSelectItem.MappableSelectPoint(
+                                    index.toLong(),
+                                    prompt.getSelectChoiceText(selectChoice),
+                                    properties,
+                                    selectChoice.index == selectedIndex,
+                                    point = points[0],
+                                    smallIcon = if (markerSymbol.isNullOrBlank()) com.yedc.icons.R.drawable.ic_map_marker_with_hole_small else com.yedc.icons.R.drawable.ic_map_marker_small,
+                                    largeIcon = if (markerSymbol.isNullOrBlank()) com.yedc.icons.R.drawable.ic_map_marker_with_hole_big else com.yedc.icons.R.drawable.ic_map_marker_big,
+                                    color = markerColor,
+                                    symbol = markerSymbol,
+                                    action = IconifiedText(
+                                        com.yedc.icons.R.drawable.ic_save,
+                                        resources.getString(com.yedc.strings.R.string.select_item)
+                                    )
+                                )
+                            } else if (points.first() != points.last()) {
+                                list + MappableSelectItem.MappableSelectLine(
+                                    index.toLong(),
+                                    prompt.getSelectChoiceText(selectChoice),
+                                    properties,
+                                    selectChoice.index == selectedIndex,
+                                    points = points,
+                                    action = IconifiedText(
+                                        com.yedc.icons.R.drawable.ic_save,
+                                        resources.getString(com.yedc.strings.R.string.select_item)
+                                    ),
+                                    strokeWidth = getPropertyValue(selectChoice, STROKE_WIDTH),
+                                    strokeColor = getPropertyValue(selectChoice, STROKE)
+                                )
+                            } else {
+                                list + MappableSelectItem.MappableSelectPolygon(
+                                    index.toLong(),
+                                    prompt.getSelectChoiceText(selectChoice),
+                                    properties,
+                                    selectChoice.index == selectedIndex,
+                                    points = points,
+                                    action = IconifiedText(
+                                        com.yedc.icons.R.drawable.ic_save,
+                                        resources.getString(com.yedc.strings.R.string.select_item)
+                                    ),
+                                    strokeWidth = getPropertyValue(selectChoice, STROKE_WIDTH),
+                                    strokeColor = getPropertyValue(selectChoice, STROKE),
+                                    fillColor = getPropertyValue(selectChoice, FILL)
+                                )
+                            }
+                        } else {
+                            list
+                        }
+                    } else {
+                        list
+                    }
+                } catch (_: NumberFormatException) {
+                    list
+                }
+            } else {
+                list
+            }
+        }
+    }
+
+    private fun getPropertyValue(selectChoice: SelectChoice, propertyName: String): String? {
+        return selectChoice.additionalChildren.firstOrNull { it.first == propertyName }?.second
+    }
+
+    override fun isLoading(): NonNullLiveData<Boolean> {
+        return isLoading
+    }
+
+    override fun getMapTitle(): LiveData<String?> {
+        return mapTitle
+    }
+
+    override fun getItemType(): String {
+        return resources.getString(com.yedc.strings.R.string.choices)
+    }
+
+    override fun getItemCount(): NonNullLiveData<Int> {
+        return itemCount
+    }
+
+    override fun getMappableItems(): LiveData<List<MappableSelectItem>?> {
+        return items
+    }
+
+    companion object PropertyNames {
+        const val GEOMETRY = "geometry"
+        const val MARKER_COLOR = "marker-color"
+        const val MARKER_SYMBOL = "marker-symbol"
+        const val STROKE = "stroke"
+        const val STROKE_WIDTH = "stroke-width"
+        const val FILL = "fill"
+    }
+}

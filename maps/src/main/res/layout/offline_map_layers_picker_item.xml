@@ -33,9 +33,9 @@
         app:layout_constraintStart_toStartOf="@id/title"
         app:layout_constraintEnd_toEndOf="@id/title"
         app:layout_constraintTop_toBottomOf="@id/title"
-        tools:text="com.jed.optima.android/projects/FSDDSDS5/layers/layer2.mbtiles" />
+        tools:text="com.yedc.android/projects/FSDDSDS5/layers/layer2.mbtiles" />
 
-    <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+    <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
         android:id="@+id/delete_layer"
         style="?materialButtonOutlinedIconStyle"
         android:layout_width="wrap_content"

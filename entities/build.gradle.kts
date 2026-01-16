@@ -8,7 +8,7 @@ plugins {
 apply(from = "../config/quality.gradle")
 
 android {
-    namespace = "com.jed.optima.entities"
+    namespace = "com.yedc.entities"
 
     compileSdk = libs.versions.compileSdk.get().toInt()
 

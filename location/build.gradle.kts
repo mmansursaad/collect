@@ -32,7 +32,7 @@ android {
             isIncludeAndroidResources = true
         }
     }
-    namespace = "com.jed.optima.location"
+    namespace = "com.yedc.location"
 }
 
 dependencies {

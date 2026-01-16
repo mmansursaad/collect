@@ -38,7 +38,7 @@ android {
         }
     }
 
-    namespace = "com.jed.optima.projects"
+    namespace = "com.yedc.projects"
 }
 
 dependencies {

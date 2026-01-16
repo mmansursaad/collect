@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:paddingEnd="@dimen/margin_extra_large">
 
-    <com.jed.optima.android.views.CustomWebView
+    <com.yedc.android.views.CustomWebView
         android:id="@+id/image_map"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

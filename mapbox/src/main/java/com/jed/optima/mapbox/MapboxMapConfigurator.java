@@ -1,6 +1,6 @@
-package com.jed.optima.mapbox;
+package com.yedc.mapbox;
 
-import static com.jed.optima.settings.keys.ProjectKeys.KEY_MAPBOX_MAP_STYLE;
+import static com.yedc.settings.keys.ProjectKeys.KEY_MAPBOX_MAP_STYLE;
 import static kotlin.collections.SetsKt.setOf;
 
 import android.content.Context;
@@ -10,13 +10,13 @@ import androidx.preference.Preference;
 
 import com.mapbox.maps.Style;
 
-import com.jed.optima.androidshared.system.OpenGLVersionChecker;
-import com.jed.optima.androidshared.ui.PrefUtils;
-import com.jed.optima.androidshared.ui.ToastUtils;
-import com.jed.optima.maps.MapConfigurator;
-import com.jed.optima.maps.layers.MbtilesFile;
-import com.jed.optima.settings.keys.ProjectKeys;
-import com.jed.optima.shared.settings.Settings;
+import com.yedc.androidshared.system.OpenGLVersionChecker;
+import com.yedc.androidshared.ui.PrefUtils;
+import com.yedc.androidshared.ui.ToastUtils;
+import com.yedc.maps.MapConfigurator;
+import com.yedc.maps.layers.MbtilesFile;
+import com.yedc.settings.keys.ProjectKeys;
+import com.yedc.shared.settings.Settings;
 
 import java.io.File;
 import java.util.Collections;
@@ -31,14 +31,14 @@ public class MapboxMapConfigurator implements MapConfigurator {
     /** Constructs a configurator with a few Mapbox style URL options to choose from. */
     public MapboxMapConfigurator() {
         this.prefKey = KEY_MAPBOX_MAP_STYLE;
-        this.sourceLabelId = com.jed.optima.strings.R.string.basemap_source_mapbox;
+        this.sourceLabelId = com.yedc.strings.R.string.basemap_source_mapbox;
         this.options = new MapboxUrlOption[]{
-                new MapboxUrlOption(Style.MAPBOX_STREETS, com.jed.optima.strings.R.string.streets),
-                new MapboxUrlOption(Style.LIGHT, com.jed.optima.strings.R.string.light),
-                new MapboxUrlOption(Style.DARK, com.jed.optima.strings.R.string.dark),
-                new MapboxUrlOption(Style.SATELLITE, com.jed.optima.strings.R.string.satellite),
-                new MapboxUrlOption(Style.SATELLITE_STREETS, com.jed.optima.strings.R.string.hybrid),
-                new MapboxUrlOption(Style.OUTDOORS, com.jed.optima.strings.R.string.outdoors)
+                new MapboxUrlOption(Style.MAPBOX_STREETS, com.yedc.strings.R.string.streets),
+                new MapboxUrlOption(Style.LIGHT, com.yedc.strings.R.string.light),
+                new MapboxUrlOption(Style.DARK, com.yedc.strings.R.string.dark),
+                new MapboxUrlOption(Style.SATELLITE, com.yedc.strings.R.string.satellite),
+                new MapboxUrlOption(Style.SATELLITE_STREETS, com.yedc.strings.R.string.hybrid),
+                new MapboxUrlOption(Style.OUTDOORS, com.yedc.strings.R.string.outdoors)
         };
     }
 
@@ -51,7 +51,7 @@ public class MapboxMapConfigurator implements MapConfigurator {
     }
 
     @Override public void showUnavailableMessage(Context context) {
-        ToastUtils.showLongToast(context.getString(com.jed.optima.strings.R.string.basemap_source_unavailable, context.getString(sourceLabelId)));
+        ToastUtils.showLongToast(context.getString(com.yedc.strings.R.string.basemap_source_unavailable, context.getString(sourceLabelId)));
     }
 
     @Override public List<Preference> createPrefs(Context context, Settings settings) {
@@ -62,7 +62,7 @@ public class MapboxMapConfigurator implements MapConfigurator {
             values[i] = options[i].url;
         }
         String prefTitle = context.getString(
-            com.jed.optima.strings.R.string.map_style_label, context.getString(sourceLabelId));
+            com.yedc.strings.R.string.map_style_label, context.getString(sourceLabelId));
         return Collections.singletonList(PrefUtils.createListPref(
             context, prefKey, prefTitle, labelIds, values, settings
         ));

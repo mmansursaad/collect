@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.jed.optima.android",
+  "applicationId": "com.yedc.android",
   "variantName": "release",
   "elements": [
     {
@@ -12,8 +12,8 @@
       "filters": [],
       "attributes": [],
       "versionCode": 5112,
-      "versionName": "v1.0.0-dirty",
-      "outputFile": "JED Optima-release.apk"
+      "versionName": "v1.0.0-1-g33c707071b-dirty",
+      "outputFile": "YEDC-release.apk"
     }
   ],
   "elementType": "File",
@@ -22,14 +22,14 @@
       "minApi": 28,
       "maxApi": 30,
       "baselineProfiles": [
-        "baselineProfiles/1/JED Optima-release.dm"
+        "baselineProfiles/1/YEDC-release.dm"
       ]
     },
     {
       "minApi": 31,
       "maxApi": 2147483647,
       "baselineProfiles": [
-        "baselineProfiles/0/JED Optima-release.dm"
+        "baselineProfiles/0/YEDC-release.dm"
       ]
     }
   ],

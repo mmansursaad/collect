@@ -26,7 +26,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    namespace = "com.jed.optima.fragmentstest"
+    namespace = "com.yedc.fragmentstest"
 }
 
 dependencies {

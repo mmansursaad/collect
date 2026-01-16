@@ -1,4 +1,4 @@
-package com.jed.optima.mapbox
+package com.yedc.mapbox
 
 /**
  * A MapFeature is a physical feature on a map, such as a point, a road,

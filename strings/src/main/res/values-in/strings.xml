@@ -576,20 +576,20 @@
     # GET BLANK FORM - ERROR MESSAGES
     ##############################################-->
   <string name="report_to_project_lead">Jika anda terus mengalami masalah ini, laporkan ke orang yang meminta anda untuk mengumpulkan data.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="unreachable_error">ODK Collect tidak dapat menghubung server di %s. Apakah anda sudah memasukkan URL dengan benar?</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="security_error">ODK Collect tidak dapat menghubung server di %s. Apakah anda sudah memasukkan URL dengan benar?</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="server_error">Peladen %1$s rmengembalikan kode status %2$s.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="invalid_response">Peladen %s mengembalikan isian yang tidak valid.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="form_with_no_hash_error">Server tidak menyediakan hash untuk formulir ini.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="form_save_disk_error">Terjadi kesalahan penyimpanan pada perangkat saat mengunduh formulir ini. </string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="form_with_invalid_submission_error">Formulir ini memiliki URL pengiriman yang tidak valid.</string>
   <!--##############################################
     # DELETE SAVED FORM

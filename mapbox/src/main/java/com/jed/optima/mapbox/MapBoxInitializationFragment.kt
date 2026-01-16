@@ -1,4 +1,4 @@
-package com.jed.optima.mapbox
+package com.yedc.mapbox
 
 import android.content.Context
 import android.os.Bundle
@@ -11,11 +11,11 @@ import androidx.startup.AppInitializer
 import com.mapbox.maps.MapView
 import com.mapbox.maps.Style
 import com.mapbox.maps.loader.MapboxMapsInitializer
-import com.jed.optima.androidshared.data.getState
-import com.jed.optima.async.network.NetworkStateProvider
-import com.jed.optima.settings.SettingsProvider
-import com.jed.optima.settings.keys.MetaKeys
-import com.jed.optima.shared.injection.ObjectProviderHost
+import com.yedc.androidshared.data.getState
+import com.yedc.async.network.NetworkStateProvider
+import com.yedc.settings.SettingsProvider
+import com.yedc.settings.keys.MetaKeys
+import com.yedc.shared.injection.ObjectProviderHost
 
 class MapBoxInitializationFragment : Fragment() {
 

@@ -38,7 +38,7 @@ android {
         }
     }
 
-    namespace = "com.jed.optima.settings"
+    namespace = "com.yedc.settings"
 }
 
 dependencies {

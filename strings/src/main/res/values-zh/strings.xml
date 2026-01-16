@@ -575,20 +575,20 @@
     # GET BLANK FORM - ERROR MESSAGES
     ##############################################-->
   <string name="report_to_project_lead">如果你一直有这个问题，请向要求你收集数据的人报告。</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="unreachable_error">无法在访问服务器 %s. 您输入的URL是否正确?</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="security_error">无法安全连接到位于 %s的服务器. 您输入的URL是否正确?</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="server_error">服务器%1$s 返回的状态 %2$s.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="invalid_response">服务器 %s 提供了无效的响应.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="form_with_no_hash_error">服务器未为此表单提供哈希。</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="form_save_disk_error">下载此表单时，设备上出现磁盘错误。</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="form_with_invalid_submission_error">此表单的提交URL无效。</string>
   <!--##############################################
     # DELETE SAVED FORM

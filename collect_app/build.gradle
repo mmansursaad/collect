@@ -71,7 +71,7 @@ def thousandMediaFileProjectUrl = secrets.getProperty('THOUSAND_MEDIA_FILE_PROJE
 def thousandMediaFileEntityListProjectUrl = secrets.getProperty('THOUSAND_MEDIA_FILE_ENTITY_LIST_PROJECT_URL', '')
 
 android {
-    namespace "com.jed.optima.android"
+    namespace "com.yedc.android"
     compileSdk libs.versions.compileSdk.get().toInteger()
 
     buildFeatures {
@@ -80,14 +80,14 @@ android {
     }
 
     defaultConfig {
-        applicationId('com.jed.optima.android')
+        applicationId('com.yedc.android')
         minSdk libs.versions.minSdk.get().toInteger()
         targetSdkVersion libs.versions.targetSdk.get().toInteger()
         versionCode project.hasProperty('versionCode') ? project.getProperties()['versionCode'].toInteger() : 5112
         versionName getVersionName()
         testInstrumentationRunner('androidx.test.runner.AndroidJUnitRunner')
         vectorDrawables.useSupportLibrary = true
-        archivesBaseName = 'JED Optima'
+        archivesBaseName = 'YEDC'
     }
 
     signingConfigs {
@@ -217,7 +217,7 @@ android {
         lintConfig file("$rootDir/config/lint.xml")
         xmlReport true
     }
-    namespace 'com.jed.optima.android'
+    namespace 'com.yedc.android'
 }
 
 configurations.all {

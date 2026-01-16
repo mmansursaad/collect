@@ -1,6 +1,6 @@
-package com.jed.optima.mapbox
+package com.yedc.mapbox
 
-import com.jed.optima.maps.MapPoint
+import com.yedc.maps.MapPoint
 
 interface LineFeature : MapFeature {
     val points: List<MapPoint>

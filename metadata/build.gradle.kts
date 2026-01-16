@@ -6,7 +6,7 @@ plugins {
 apply(from = "../config/quality.gradle")
 
 android {
-    namespace = "com.jed.optima.metadata"
+    namespace = "com.yedc.metadata"
 
     compileSdk = libs.versions.compileSdk.get().toInt()
 

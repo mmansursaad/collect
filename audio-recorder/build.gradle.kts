@@ -31,7 +31,7 @@ android {
     testOptions {
         unitTests.isIncludeAndroidResources = true
     }
-    namespace = "com.jed.optima.audiorecorder"
+    namespace = "com.yedc.audiorecorder"
 }
 
 dependencies {

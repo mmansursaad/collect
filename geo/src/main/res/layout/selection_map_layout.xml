@@ -30,7 +30,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/map_container"
-            android:name="com.jed.optima.maps.MapFragment"
+            android:name="com.yedc.maps.MapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/geometry_status"
@@ -97,7 +97,7 @@
         </ScrollView>
     </RelativeLayout>
 
-    <com.jed.optima.geo.selection.SelectionSummarySheet
+    <com.yedc.geo.selection.SelectionSummarySheet
         android:id="@+id/summary_sheet"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

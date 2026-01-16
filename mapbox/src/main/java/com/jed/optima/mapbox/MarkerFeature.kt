@@ -1,14 +1,14 @@
-package com.jed.optima.mapbox
+package com.yedc.mapbox
 
 import android.content.Context
 import com.mapbox.maps.plugin.annotation.generated.OnPointAnnotationClickListener
 import com.mapbox.maps.plugin.annotation.generated.OnPointAnnotationDragListener
 import com.mapbox.maps.plugin.annotation.generated.PointAnnotation
 import com.mapbox.maps.plugin.annotation.generated.PointAnnotationManager
-import com.jed.optima.maps.MapFragment
-import com.jed.optima.maps.MapPoint
-import com.jed.optima.maps.markers.MarkerIconCreator
-import com.jed.optima.maps.markers.MarkerIconDescription
+import com.yedc.maps.MapFragment
+import com.yedc.maps.MapPoint
+import com.yedc.maps.markers.MarkerIconCreator
+import com.yedc.maps.markers.MarkerIconDescription
 
 /** A point annotation that can optionally be dragged by the user. */
 class MarkerFeature(

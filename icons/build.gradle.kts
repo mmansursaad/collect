@@ -26,7 +26,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    namespace = "com.jed.optima.icons"
+    namespace = "com.yedc.icons"
 }
 
 dependencies {

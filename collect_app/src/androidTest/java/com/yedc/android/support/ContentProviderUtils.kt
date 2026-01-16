@@ -1,0 +1,50 @@
+package com.yedc.android.support
+
+import android.app.Application
+import android.provider.BaseColumns
+import androidx.test.core.app.ApplicationProvider
+import com.yedc.android.database.forms.DatabaseFormColumns
+import com.yedc.android.database.instances.DatabaseInstanceColumns
+
+object ContentProviderUtils {
+
+    fun getFormDatabaseId(projectId: String, formId: String): Long {
+        val contentResolver =
+            ApplicationProvider.getApplicationContext<Application>().contentResolver
+        val uri = _root_ide_package_.com.yedc.android.external.FormsContract.getUri(projectId)
+        return contentResolver.query(uri, null, null, null, null, null).use {
+            if (it != null) {
+                var dbId: Long? = null
+                while (it.moveToNext()) {
+                    if (it.getString(it.getColumnIndex(DatabaseFormColumns.JR_FORM_ID)) == formId) {
+                        dbId = it.getLong(it.getColumnIndex(BaseColumns._ID))
+                    }
+                }
+
+                dbId ?: throw IllegalArgumentException("Form does not exist!")
+            } else {
+                throw RuntimeException("Null cursor!")
+            }
+        }
+    }
+
+    fun getInstanceDatabaseId(projectId: String, formId: String): Long {
+        val contentResolver =
+            ApplicationProvider.getApplicationContext<Application>().contentResolver
+        val uri = _root_ide_package_.com.yedc.android.external.InstancesContract.getUri(projectId)
+        return contentResolver.query(uri, null, null, null, null, null).use {
+            if (it != null) {
+                var dbId: Long? = null
+                while (it.moveToNext()) {
+                    if (it.getString(it.getColumnIndex(DatabaseInstanceColumns.JR_FORM_ID)) == formId) {
+                        dbId = it.getLong(it.getColumnIndex(BaseColumns._ID))
+                    }
+                }
+
+                dbId ?: throw IllegalArgumentException("Form does not exist!")
+            } else {
+                throw RuntimeException("Null cursor!")
+            }
+        }
+    }
+}

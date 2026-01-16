@@ -1,6 +1,6 @@
-package com.jed.optima.mapbox;
+package com.yedc.mapbox;
 
-import com.jed.optima.maps.layers.TileSource;
+import com.yedc.maps.layers.TileSource;
 
 import java.io.BufferedReader;
 import java.io.Closeable;

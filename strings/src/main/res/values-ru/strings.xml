@@ -536,20 +536,20 @@
     # GET BLANK FORM - ERROR MESSAGES
     ##############################################-->
   <string name="report_to_project_lead">Если вы продолжаете сталкиваться с этой проблемой, сообщите об этом человеку, который попросил вас собрать данные.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="unreachable_error">Collect не может связаться с сервером по адресу %s. Вы правильно ввели URL?</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="security_error">Collect не может безопасно подключиться к серверу по адресу %s. Вы правильно ввели URL?</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="server_error">Сервер %1$s вернул статусный код %2$s.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="invalid_response">Сервер %s предоставил неверный ответ.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="form_with_no_hash_error">Сервер не предоставил хеш для этой формы.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="form_save_disk_error">При загрузке этой формы на устройстве произошла ошибка диска.</string>
-  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.jed.optima data-->
+  <!--Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data-->
   <string name="form_with_invalid_submission_error">Эта форма имеет недопустимый URL отправки.</string>
   <!--##############################################
     # DELETE SAVED FORM

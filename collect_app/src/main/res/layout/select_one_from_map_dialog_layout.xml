@@ -7,6 +7,6 @@
         android:id="@+id/selection_map"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.jed.optima.geo.selection.SelectionMapFragment"/>
+        android:name="com.yedc.geo.selection.SelectionMapFragment"/>
 
 </FrameLayout>

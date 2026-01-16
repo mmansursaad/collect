@@ -31,7 +31,7 @@
             app:layout_constraintEnd_toStartOf="@id/guideline_end"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <com.jed.optima.material.ErrorsPill
+        <com.yedc.material.ErrorsPill
             android:id="@+id/status_chip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
             tools:text="Info"
             tools:visibility="visible" />
 
-        <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+        <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
             android:id="@+id/action"
             style="?materialButtonIconStyle"
             android:layout_width="wrap_content"

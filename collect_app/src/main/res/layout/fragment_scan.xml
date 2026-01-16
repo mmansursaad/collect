@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="optima.android.fragments.BarCodeScannerFragment">
+    tools:context="yedc.android.fragments.BarCodeScannerFragment">
 
 
-    <com.jed.optima.qrcode.BarcodeScannerViewContainer
+    <com.yedc.qrcode.BarcodeScannerViewContainer
         android:id="@+id/barcode_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.jed.optima.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
+    <com.yedc.androidshared.ui.multiclicksafe.MultiClickSafeMaterialButton
         android:id="@+id/switch_flashlight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

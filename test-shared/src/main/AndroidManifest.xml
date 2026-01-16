@@ -2,6 +2,6 @@
 
     /
     <application>
-        <activity android:name="com.jed.optima.testshared.DummyActivity" />
+        <activity android:name="com.yedc.testshared.DummyActivity" />
     </application>
 </manifest>

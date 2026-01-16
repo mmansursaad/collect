@@ -1,0 +1,39 @@
+package com.yedc.android.activities;
+
+import com.yedc.android.database.forms.DatabaseFormColumns;
+
+import static com.yedc.android.utilities.ApplicationConstants.SortingOrder.BY_DATE_ASC;
+import static com.yedc.android.utilities.ApplicationConstants.SortingOrder.BY_DATE_DESC;
+import static com.yedc.android.utilities.ApplicationConstants.SortingOrder.BY_NAME_ASC;
+import static com.yedc.android.utilities.ApplicationConstants.SortingOrder.BY_NAME_DESC;
+
+public abstract class FormListActivity extends AppListActivity {
+
+    protected static final String SORT_BY_DATE_DESC
+            = DatabaseFormColumns.DATE + " DESC";
+    protected static final String SORT_BY_NAME_ASC
+            = DatabaseFormColumns.DISPLAY_NAME + " COLLATE NOCASE ASC";
+    protected static final String SORT_BY_NAME_DESC
+            = DatabaseFormColumns.DISPLAY_NAME + " COLLATE NOCASE DESC";
+    protected static final String SORT_BY_DATE_ASC
+            = DatabaseFormColumns.DATE + " ASC";
+
+    protected String getSortingOrder() {
+        String sortingOrder = SORT_BY_DATE_DESC;
+        switch (getSelectedSortingOrder()) {
+            case BY_DATE_DESC:
+                sortingOrder = SORT_BY_DATE_DESC;
+                break;
+            case BY_NAME_ASC:
+                sortingOrder = SORT_BY_NAME_ASC;
+                break;
+            case BY_NAME_DESC:
+                sortingOrder = SORT_BY_NAME_DESC;
+                break;
+            case BY_DATE_ASC:
+                sortingOrder = SORT_BY_DATE_ASC;
+                break;
+        }
+        return sortingOrder;
+    }
+}

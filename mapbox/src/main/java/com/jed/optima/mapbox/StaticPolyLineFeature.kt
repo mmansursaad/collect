@@ -1,12 +1,12 @@
-package com.jed.optima.mapbox
+package com.yedc.mapbox
 
 import com.mapbox.geojson.Point
 import com.mapbox.maps.plugin.annotation.generated.PolylineAnnotation
 import com.mapbox.maps.plugin.annotation.generated.PolylineAnnotationManager
 import com.mapbox.maps.plugin.annotation.generated.PolylineAnnotationOptions
-import com.jed.optima.maps.LineDescription
-import com.jed.optima.maps.MapFragment
-import com.jed.optima.maps.MapPoint
+import com.yedc.maps.LineDescription
+import com.yedc.maps.MapFragment
+import com.yedc.maps.MapPoint
 
 /** A polyline that can not be manipulated by dragging Symbols at its vertices. */
 internal class StaticPolyLineFeature(

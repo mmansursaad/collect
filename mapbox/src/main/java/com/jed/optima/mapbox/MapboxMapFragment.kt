@@ -1,4 +1,4 @@
-package com.jed.optima.mapbox
+package com.yedc.mapbox
 
 import android.graphics.Color
 import android.location.Location
@@ -53,29 +53,29 @@ import com.mapbox.maps.plugin.gestures.addOnScaleListener
 import com.mapbox.maps.plugin.locationcomponent.location
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import com.jed.optima.androidshared.utils.ScreenUtils
-import com.jed.optima.location.LocationClient
-import com.jed.optima.location.LocationClient.LocationClientListener
-import com.jed.optima.maps.LineDescription
-import com.jed.optima.maps.MapFragment
-import com.jed.optima.maps.MapFragment.ErrorListener
-import com.jed.optima.maps.MapFragment.FeatureListener
-import com.jed.optima.maps.MapFragment.PointListener
-import com.jed.optima.maps.MapFragment.ReadyListener
-import com.jed.optima.maps.MapPoint
-import com.jed.optima.maps.MapViewModel
-import com.jed.optima.maps.MapViewModelMapFragment
-import com.jed.optima.maps.PolygonDescription
-import com.jed.optima.maps.Zoom
-import com.jed.optima.maps.ZoomObserver
-import com.jed.optima.maps.layers.MapFragmentReferenceLayerUtils.getReferenceLayerFile
-import com.jed.optima.maps.layers.MbtilesFile
-import com.jed.optima.maps.layers.ReferenceLayerRepository
-import com.jed.optima.maps.markers.MarkerDescription
-import com.jed.optima.maps.markers.MarkerIconCreator
-import com.jed.optima.maps.markers.MarkerIconDescription
-import com.jed.optima.settings.SettingsProvider
-import com.jed.optima.shared.injection.ObjectProviderHost
+import com.yedc.androidshared.utils.ScreenUtils
+import com.yedc.location.LocationClient
+import com.yedc.location.LocationClient.LocationClientListener
+import com.yedc.maps.LineDescription
+import com.yedc.maps.MapFragment
+import com.yedc.maps.MapFragment.ErrorListener
+import com.yedc.maps.MapFragment.FeatureListener
+import com.yedc.maps.MapFragment.PointListener
+import com.yedc.maps.MapFragment.ReadyListener
+import com.yedc.maps.MapPoint
+import com.yedc.maps.MapViewModel
+import com.yedc.maps.MapViewModelMapFragment
+import com.yedc.maps.PolygonDescription
+import com.yedc.maps.Zoom
+import com.yedc.maps.ZoomObserver
+import com.yedc.maps.layers.MapFragmentReferenceLayerUtils.getReferenceLayerFile
+import com.yedc.maps.layers.MbtilesFile
+import com.yedc.maps.layers.ReferenceLayerRepository
+import com.yedc.maps.markers.MarkerDescription
+import com.yedc.maps.markers.MarkerIconCreator
+import com.yedc.maps.markers.MarkerIconDescription
+import com.yedc.settings.SettingsProvider
+import com.yedc.shared.injection.ObjectProviderHost
 import timber.log.Timber
 import java.io.File
 import java.io.IOException
@@ -505,7 +505,7 @@ class MapboxMapFragment :
             this.locationPuck = LocationPuck2D(
                 AppCompatResources.getDrawable(
                     requireContext(),
-                    com.jed.optima.maps.R.drawable.ic_crosshairs
+                    com.yedc.maps.R.drawable.ic_crosshairs
                 )
             )
         }

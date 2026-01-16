@@ -6,7 +6,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/multi_select_list"
-        android:name="com.jed.optima.lists.selects.MultiSelectListFragment"
+        android:name="com.yedc.lists.selects.MultiSelectListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
