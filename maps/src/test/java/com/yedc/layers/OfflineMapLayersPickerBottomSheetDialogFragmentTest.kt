@@ -249,7 +249,7 @@ class OfflineMapLayersPickerBottomSheetDialogFragmentTest {
 
         verify(externalWebPageHelper).openWebPageInCustomTab(
             any(),
-            eq(Uri.parse("https://drive.google.com/drive/u/0/folders/1zNKfjUm6jYQUcMFgm2hVEtlHE29mRQpT"))
+            eq(Uri.parse("https://drive.google.com/drive/u/0/folders/1JWG_0lqtIjmSWau2_EAoJmHy6nwLRldm"))
         )
     }
 

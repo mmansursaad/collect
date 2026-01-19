@@ -104,7 +104,7 @@ class OfflineMapLayersPickerBottomSheetDialogFragment(
         binding.mbtilesInfoGroup.addOnClickListener {
             externalWebPageHelper.openWebPageInCustomTab(
                 requireActivity(),
-                Uri.parse("https://drive.google.com/drive/u/0/folders/1zNKfjUm6jYQUcMFgm2hVEtlHE29mRQpT"
+                Uri.parse("https://drive.google.com/drive/u/0/folders/1JWG_0lqtIjmSWau2_EAoJmHy6nwLRldm"
                 )
             )
         }
