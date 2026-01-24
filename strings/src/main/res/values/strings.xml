@@ -17,7 +17,7 @@
     <!--    Text for an action button on the main screen.    -->
     <string name="send_data">Awaiting submission</string>
     <!--    Text for an action button on the main screen.    -->
-    <string name="view_sent_forms">Sent Records</string>
+    <string name="view_sent_forms">Submitted Records</string>
     <!--    Text for an action button on the main screen.    -->
     <string name="get_forms">Download form</string>
     <!--    Text for an action button on the main screen.    -->
@@ -202,7 +202,7 @@ permission this App can\'t record your location. Please try again when you are r
                 ##############################################
                    -->
     <!--    Name of button displayed when a screen contains multiple questions populated by an external app: https://docs.getodk.org/launch-apps-from-collect/#launching-external-apps-to-populate-multiple-fields    -->
-    <string name="launch_app">Launch</string>
+    <string name="launch_app">Open</string>
     <string name="activity_not_found">No activity found to handle: %s</string>
     <string name="no_app">The requested application is missing. Please manually enter the reading.</string>
     <string name="null_intent_value">The external application did not provide expected information.</string>
@@ -417,7 +417,7 @@ permission this App can\'t record your location. Please try again when you are r
     <!--    Action to save the contents of a full screen dialog    -->
     <string name="save">Save</string>
     <!--    Button text to select a place from a list presented on a map    -->
-    <string name="select_place">Select a customer</string>
+    <string name="select_place">Open Map</string>
     <string name="choices">Customers</string>
     <!--
                 ##############################################
@@ -617,7 +617,7 @@ permission this App can\'t record your location. Please try again when you are r
     <string name="version">Version:</string>
     <string name="form_updates_available">Form updates available</string>
     <string name="newer_version_of_a_form_info">This is an update to a form you have</string>
-    <string name="form_update_error">Forms autorefresh failed</string>
+    <string name="form_update_error">Auto-refresh failed</string>
     <string name="form_update_succeeded">Forms refresh successful</string>
     <string name="load_remote_form_error">Form list download failed</string>
     <string name="forms_download_succeeded">Forms download succeeded</string>
@@ -1166,7 +1166,7 @@ password
     <!--    Message displayed when the list of blank forms is empty    -->
     <string name="empty_list_of_blank_forms_title">Loading..</string>
     <!--    Subtext displayed when the list of blank forms is empty    -->
-    <string name="empty_list_of_blank_forms_subtitle">To refresh forms, internet should be connected!</string>
+    <string name="empty_list_of_blank_forms_subtitle">If refresh fails, internet should be connected!</string>
     <!--    Message displayed when the list of drafts is empty    -->
     <string name="empty_list_of_drafts_title">No Assignment yet</string>
     <!--    Subtext displayed when the list of drafts is empty    -->
