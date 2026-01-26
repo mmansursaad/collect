@@ -633,9 +633,9 @@ permission this App can\'t record your location. Please try again when you are r
                    -->
     <string name="report_to_project_lead">If you keep having this problem, report it to the person who asked you to collect data.</string>
     <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
-    <string name="unreachable_error">Collect can\'t reach the server at %s. Did you enter the URL correctly?</string>
+    <string name="unreachable_error">YEDC can\'t reach the server at %s. Did you enter the URL correctly?</string>
     <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
-    <string name="security_error">Collect can\'t connect securely to the server at %s. Did you enter the URL correctly?</string>
+    <string name="security_error">YEDC can\'t connect securely to the server at %s. Did you enter the URL correctly?</string>
     <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
     <string name="server_error">The server %1$s returned status code %2$s.</string>
     <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
