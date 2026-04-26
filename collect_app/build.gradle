@@ -90,6 +90,24 @@ android {
         archivesBaseName = 'YEDC'
     }
 
+    flavorDimensions "brand"
+
+    productFlavors {
+        // YEDC Flavor
+        yedc {
+            dimension "brand"
+            applicationId 'com.yedc.android'
+            versionNameSuffix "-yedc"
+        }
+
+        // SEDC Flavor
+        sedc {
+            dimension "brand"
+            applicationId 'com.sedc.android'
+            versionNameSuffix "-sedc"
+        }
+    }
+
     signingConfigs {
         release {
             if (secrets.getProperty('RELEASE_STORE_FILE')) {
