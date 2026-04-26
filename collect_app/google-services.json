@@ -5,7 +5,7 @@
     "storage_bucket": "collect-b2001.firebasestorage.app"
   },
   "client": [
-    {
+     {
       "client_info": {
         "mobilesdk_app_id": "1:408854424034:android:3278eaa9a80c47a13df1bb",
         "android_client_info": {

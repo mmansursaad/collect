@@ -125,7 +125,7 @@ class FirstLaunchActivity : LocalizedActivity() {
 
                 setOnClickListener {
                     // 1. Define the URL you want to open as a String
-                    val urlToOpen = "https://drive.google.com/drive/u/0/folders/1UBQnM38lsBXGBmNukeNPc9hCPUF-YIVj"
+                    val urlToOpen = BuildConfig.QR_FOLDER_URL
 
                     // 2. Create an Intent with the ACTION_VIEW action
                     //    This tells Android you want to view something.

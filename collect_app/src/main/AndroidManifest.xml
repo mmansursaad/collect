@@ -220,11 +220,11 @@ the specific language governing permissions and limitations under the License.
 
         <provider
             android:name="com.yedc.android.external.FormsProvider"
-            android:authorities="com.yedc.android.provider.odk.forms"
+            android:authorities="${appAuth}.forms"
             android:exported="true" />
         <provider
             android:name="com.yedc.android.external.InstanceProvider"
-            android:authorities="com.yedc.android.provider.odk.instances"
+            android:authorities="${appAuth}.instances"
             android:exported="true" />
 
         <activity-alias

@@ -633,9 +633,9 @@ permission this App can\'t record your location. Please try again when you are r
                    -->
     <string name="report_to_project_lead">If you keep having this problem, report it to the person who asked you to collect data.</string>
     <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
-    <string name="unreachable_error">YEDC can\'t reach the server at %s. Did you enter the URL correctly?</string>
+    <string name="unreachable_error">%@string/collect_app_name can\'t reach the server at %s. Did you enter the URL correctly?</string>
     <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
-    <string name="security_error">YEDC can\'t connect securely to the server at %s. Did you enter the URL correctly?</string>
+    <string name="security_error">%@string/collect_app_name can\'t connect securely to the server at %s. Did you enter the URL correctly?</string>
     <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
     <string name="server_error">The server %1$s returned status code %2$s.</string>
     <!--    Displayed in error dialog for form downloads. Followed by instructions to talk to person who asked to com.yedc data    -->
@@ -1027,7 +1027,7 @@ password
                 ##############################################
                    -->
     <!--    Error shown when a user tries to open a form that's in a different project    -->
-    <string name="wrong_project_selected_for_form">To open this form, you must first open YEDC and switch to the account that contains it.</string>
+    <string name="wrong_project_selected_for_form">To open this form, you must first open %@string/collect_app_name and switch to the account that contains it.</string>
     <!--    Error shown when a user tries to open a form when there are no projects    -->
     <string name="app_not_configured">App has not been configured. Try to open the App and configure it.\n\nIf you tapped on a shortcut, you might need to recreate it after configuring ODK Collect.</string>
     <!--    Displayed when form filling is attempted to be launched by intent but the intent URI mime type is unknown    -->
