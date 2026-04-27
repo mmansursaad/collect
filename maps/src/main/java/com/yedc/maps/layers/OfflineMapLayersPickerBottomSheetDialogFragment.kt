@@ -29,13 +29,16 @@ import com.yedc.maps.databinding.OfflineMapLayersPickerBinding
 import com.yedc.settings.SettingsProvider
 import com.yedc.settings.keys.ProjectKeys
 import com.yedc.strings.localization.getLocalizedString
+import com.yedc.androidshared.livedata.LiveDataUtils
+import com.yedc.strings.R
+import com.yedc.webpage.ExternalWebPageHelper
 
 class OfflineMapLayersPickerBottomSheetDialogFragment(
     registry: ActivityResultRegistry,
     private val referenceLayerRepository: ReferenceLayerRepository,
     private val scheduler: Scheduler,
     private val settingsProvider: SettingsProvider,
-    private val externalWebPageHelper: _root_ide_package_.com.yedc.webpage.ExternalWebPageHelper
+    private val externalWebPageHelper: ExternalWebPageHelper
 ) : BottomSheetDialogFragment(),
     OfflineMapLayersPickerAdapter.OfflineMapLayersPickerAdapterInterface {
 
@@ -102,10 +105,12 @@ class OfflineMapLayersPickerBottomSheetDialogFragment(
         val binding = OfflineMapLayersPickerBinding.inflate(inflater)
 
         binding.mbtilesInfoGroup.addOnClickListener {
+            // Access the flavor-specific URL via R.string
+            val layersUrl = getString(R.string.offline_layers_url)
+
             externalWebPageHelper.openWebPageInCustomTab(
                 requireActivity(),
-                Uri.parse("https://drive.google.com/drive/u/0/folders/1JWG_0lqtIjmSWau2_EAoJmHy6nwLRldm"
-                )
+                Uri.parse(layersUrl)
             )
         }
 
@@ -149,7 +154,7 @@ class OfflineMapLayersPickerBottomSheetDialogFragment(
 
         val adapter = OfflineMapLayersPickerAdapter(this)
         binding.layers.setAdapter(adapter)
-        _root_ide_package_.com.yedc.androidshared.livedata.LiveDataUtils.zip3(
+        LiveDataUtils.zip3(
             sharedViewModel.existingLayers,
             checkedStateViewModel.getSelected(),
             expandedStateViewModel.getSelected()
@@ -185,14 +190,14 @@ class OfflineMapLayersPickerBottomSheetDialogFragment(
         MaterialAlertDialogBuilder(requireActivity())
             .setMessage(
                 requireActivity().getLocalizedString(
-                    com.yedc.strings.R.string.delete_layer_confirmation_message,
+                    R.string.delete_layer_confirmation_message,
                     layerItem.name
                 )
             )
-            .setPositiveButton(com.yedc.strings.R.string.delete_layer) { _, _ ->
+            .setPositiveButton(R.string.delete_layer) { _, _ ->
                 sharedViewModel.deleteLayer(layerItem.id!!)
             }
-            .setNegativeButton(com.yedc.strings.R.string.cancel, null)
+            .setNegativeButton(R.string.cancel, null)
             .create()
             .show()
     }
@@ -211,7 +216,7 @@ class OfflineMapLayersPickerBottomSheetDialogFragment(
             CheckableReferenceLayer(
                 null,
                 null,
-                requireContext().getLocalizedString(com.yedc.strings.R.string.none),
+                requireContext().getLocalizedString(R.string.none),
                 checkedLayerId == null,
                 false
             )

@@ -1,6 +1,7 @@
 package com.yedc.testshared
 
 import androidx.lifecycle.LiveData
+import com.yedc.androidtest.getOrAwaitValue
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Runnable
 import kotlinx.coroutines.flow.Flow

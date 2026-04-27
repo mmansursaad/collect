@@ -101,7 +101,7 @@ android {
                     appAuth: "com.yedc.android.provider"
             ]
             versionNameSuffix "-yedc"
-            buildConfigField "String", "QR_FOLDER_URL", "\"https://drive.google.com/drive/u/0/folders/1UBQnM38lsBXGBmNukeNPc9hCPUF-YIVj\""
+            //buildConfigField "String", "QR_FOLDER_URL", "\"https://drive.google.com/drive/u/0/folders/1UBQnM38lsBXGBmNukeNPc9hCPUF-YIVj\""
         }
 
         // SEDC Flavor
@@ -112,7 +112,7 @@ android {
                     appAuth: "com.sedc.android.provider"
             ]
             versionNameSuffix "-sedc"
-            buildConfigField "String", "QR_FOLDER_URL", "\"https://drive.google.com/drive/folders/1gqcygrAcAVHlerNd3oKjKT7jjjafb8z3?usp=drive_link\""
+            //buildConfigField "String", "QR_FOLDER_URL", "\"https://drive.google.com/drive/folders/1gqcygrAcAVHlerNd3oKjKT7jjjafb8z3?usp=drive_link\""
         }
     }
 

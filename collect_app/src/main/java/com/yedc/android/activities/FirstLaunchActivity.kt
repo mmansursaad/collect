@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
 import com.yedc.analytics.Analytics
+import com.yedc.android.R
 import com.yedc.android.analytics.AnalyticsEvents
 import com.yedc.android.databinding.FirstLaunchLayoutBinding
 import com.yedc.android.injection.DaggerUtils
@@ -125,7 +126,7 @@ class FirstLaunchActivity : LocalizedActivity() {
 
                 setOnClickListener {
                     // 1. Define the URL you want to open as a String
-                    val urlToOpen = BuildConfig.QR_FOLDER_URL
+                    val urlToOpen = getString(R.string.qr_folder_url)
 
                     // 2. Create an Intent with the ACTION_VIEW action
                     //    This tells Android you want to view something.
