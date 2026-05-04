@@ -28,7 +28,7 @@
                 android:layout_height="162dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/collect_app_name"
-                android:src="@drawable/yedc_logo"
+                android:src="@drawable/ic_splashscreen"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

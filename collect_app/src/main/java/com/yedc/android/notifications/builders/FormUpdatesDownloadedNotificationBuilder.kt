@@ -10,6 +10,7 @@ import com.yedc.android.notifications.NotificationManagerNotifier
 import com.yedc.android.notifications.NotificationUtils
 import com.yedc.android.utilities.FormsDownloadResultInterpreter
 import com.yedc.strings.localization.getLocalizedString
+import com.yedc.shared.FlavorRegistry
 
 object FormUpdatesDownloadedNotificationBuilder {
 
@@ -51,7 +52,7 @@ object FormUpdatesDownloadedNotificationBuilder {
             setContentTitle(title)
             setContentText(message)
             setSubText(projectName)
-            setSmallIcon(com.yedc.icons.R.drawable.ic_notification_small_yedc)
+            setSmallIcon(FlavorRegistry.smallIcon)
             setAutoCancel(true)
 
             if (!allFormsDownloadedSuccessfully) {

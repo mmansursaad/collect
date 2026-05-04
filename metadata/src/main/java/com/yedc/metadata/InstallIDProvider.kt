@@ -1,6 +1,8 @@
 package com.yedc.metadata
 
 import com.yedc.shared.settings.Settings
+import com.yedc.shared.strings.RandomString
+import com.yedc.shared.FlavorRegistry
 
 interface InstallIDProvider {
     val installID: String
@@ -21,7 +23,12 @@ class SettingsInstallIDProvider(
         }
 
     private fun generateAndStoreInstallID(): String {
-        val installID = "yed:" + _root_ide_package_.com.yedc.shared.strings.RandomString.randomString(16)
+
+        val idPrefix = FlavorRegistry.idPrefix
+        val randomSuffix = RandomString.randomString(16)
+
+        val installID = "$idPrefix:$randomSuffix"
+
         metaPreferences.save(preferencesKey, installID)
         return installID
     }

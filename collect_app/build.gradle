@@ -98,10 +98,10 @@ android {
             dimension "brand"
             applicationId 'com.yedc.android'
             manifestPlaceholders = [
-                    appAuth: "com.yedc.android.provider"
+                    appAuth: "com.yedc.android.provider",
+                    "content_provider_authority": "${applicationId}.provider.odk"
             ]
             versionNameSuffix "-yedc"
-            //buildConfigField "String", "QR_FOLDER_URL", "\"https://drive.google.com/drive/u/0/folders/1UBQnM38lsBXGBmNukeNPc9hCPUF-YIVj\""
         }
 
         // SEDC Flavor
@@ -109,10 +109,10 @@ android {
             dimension "brand"
             applicationId 'com.sedc.android'
             manifestPlaceholders = [
-                    appAuth: "com.sedc.android.provider"
+                    appAuth: "com.sedc.android.provider",
+                    "content_provider_authority": "${applicationId}.provider.odk"
             ]
             versionNameSuffix "-sedc"
-            //buildConfigField "String", "QR_FOLDER_URL", "\"https://drive.google.com/drive/folders/1gqcygrAcAVHlerNd3oKjKT7jjjafb8z3?usp=drive_link\""
         }
     }
 

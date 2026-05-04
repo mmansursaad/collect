@@ -11,6 +11,7 @@ import com.yedc.android.notifications.NotificationUtils
 import com.yedc.android.notifications.NotificationUtils.createOpenErrorsActionIntent
 import com.yedc.errors.ErrorItem
 import com.yedc.forms.FormSourceException
+import com.yedc.shared.FlavorRegistry
 import com.yedc.strings.localization.getLocalizedString
 
 object FormsSyncFailedNotificationBuilder {
@@ -25,7 +26,7 @@ object FormsSyncFailedNotificationBuilder {
             setContentIntent(contentIntent)
             setContentTitle(application.getLocalizedString(com.yedc.strings.R.string.form_update_error))
             setSubText(projectName)
-            setSmallIcon(com.yedc.icons.R.drawable.ic_notification_small_yedc)
+            setSmallIcon(FlavorRegistry.smallIcon)
             setAutoCancel(true)
             addAction(
                 R.drawable.ic_outline_info_small,

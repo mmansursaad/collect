@@ -10,10 +10,10 @@ import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.lifecycle.Observer
 import com.yedc.androidshared.ui.ReturnToAppActivity
-import com.yedc.audiorecorder.R
 import com.yedc.audiorecorder.recording.RecordingSession
 import com.yedc.strings.format.formatLength
 import com.yedc.strings.localization.getLocalizedString
+import com.yedc.shared.FlavorRegistry
 
 internal class RecordingForegroundServiceNotification(private val service: Service, private val recordingRepository: RecordingRepository) {
 
@@ -21,7 +21,7 @@ internal class RecordingForegroundServiceNotification(private val service: Servi
     private val notificationBuilder = NotificationCompat.Builder(service, NOTIFICATION_CHANNEL)
         .setContentTitle(service.getLocalizedString(com.yedc.strings.R.string.recording))
         .setContentText(formatLength(0))
-        .setSmallIcon(com.yedc.icons.R.drawable.ic_notification_small_yedc)
+        .setSmallIcon(FlavorRegistry.smallIcon)
         .setContentIntent(PendingIntent.getActivity(service, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE))
         .setPriority(NotificationCompat.PRIORITY_LOW)
 

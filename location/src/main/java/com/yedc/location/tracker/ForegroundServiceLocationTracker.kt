@@ -14,8 +14,8 @@ import com.yedc.androidshared.data.getState
 import com.yedc.androidshared.ui.ReturnToAppActivity
 import com.yedc.location.Location
 import com.yedc.location.LocationClientProvider
-import com.yedc.location.R
 import com.yedc.strings.localization.getLocalizedString
+import com.yedc.shared.FlavorRegistry
 
 private const val LOCATION_KEY = "location"
 
@@ -101,7 +101,7 @@ class LocationTrackerService : Service(), _root_ide_package_.com.yedc.location.L
 
     private fun createNotification(): Notification {
         val notification = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL)
-            .setSmallIcon(com.yedc.icons.R.drawable.ic_notification_small_yedc)
+            .setSmallIcon(FlavorRegistry.smallIcon)
             .setContentTitle(getLocalizedString(com.yedc.strings.R.string.location_tracking_notification_title))
             .setPriority(NotificationCompat.PRIORITY_LOW)
             .setContentIntent(createNotificationIntent())

@@ -10,7 +10,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.asLiveData
 import com.yedc.analytics.Analytics
-import com.yedc.android.R
 import com.yedc.android.analytics.AnalyticsEvents
 import com.yedc.android.databinding.FirstLaunchLayoutBinding
 import com.yedc.android.injection.DaggerUtils
@@ -31,6 +30,7 @@ import com.yedc.strings.localization.LocalizedActivity
 import javax.inject.Inject
 import android.content.Intent // <--- For using Intent
 import android.net.Uri       // <--- For using Uri
+import com.yedc.shared.FlavorRegistry
 
 class FirstLaunchActivity : LocalizedActivity() {
 
@@ -126,7 +126,7 @@ class FirstLaunchActivity : LocalizedActivity() {
 
                 setOnClickListener {
                     // 1. Define the URL you want to open as a String
-                    val urlToOpen = getString(R.string.qr_folder_url)
+                    val urlToOpen = FlavorRegistry.qrFolderUrl
 
                     // 2. Create an Intent with the ACTION_VIEW action
                     //    This tells Android you want to view something.
@@ -139,8 +139,6 @@ class FirstLaunchActivity : LocalizedActivity() {
                     // 4. Start the activity (which will be the web browser)
                     //    `this@FirstLaunchActivity` refers to your current screen (the Activity).
                     startActivity(intent)
-
-                    // --- END OF CHANGES ---
 
                     //viewModel.tryDemo()
                 }

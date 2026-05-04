@@ -14,7 +14,7 @@
         android:layout_marginTop="@dimen/margin_standard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/yedc_logo" />
+        app:srcCompat="@drawable/notes" />
 
     <TextView
         android:id="@+id/form_title"

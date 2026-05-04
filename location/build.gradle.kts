@@ -42,6 +42,7 @@ dependencies {
     implementation(project(":icons"))
     implementation(project(":strings"))
     implementation(project(":analytics"))
+    implementation(project(":shared"))
     implementation(libs.kotlinStdlib)
     implementation(libs.androidxCoreKtx)
     implementation(libs.playServicesLocation)

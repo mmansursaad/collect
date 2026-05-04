@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="collect_app_name" translatable="false">YEDC</string>
+    <!-- YEDC QR Code Folder URL -->
+    <string name="qr_folder_url" translatable="false">https://drive.google.com/drive/u/0/folders/1UBQnM38lsBXGBmNukeNPc9hCPUF-YIVj</string>
+    <!-- YEDC Cadastral Layers Folder URL -->
+    <string name="offline_layers_url" translatable="false">https://https://drive.google.com/drive/u/0/folders/1JWG_0lqtIjmSWau2_EAoJmHy6nwLRldm</string>
+    <!-- Device ID prefix -->
+    <string name="device_id_prefix" translatable="false">yed</string>
+</resources>

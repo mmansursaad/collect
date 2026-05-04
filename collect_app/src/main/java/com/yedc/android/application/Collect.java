@@ -24,6 +24,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.jetbrains.annotations.NotNull;
+
+import com.yedc.android.R;
 import com.yedc.android.dynamicpreload.ExternalDataManager;
 import com.yedc.qrcode.mlkit.MlKitBarcodeScannerViewFactory;
 import com.yedc.android.injection.DaggerUtils;
@@ -81,6 +83,7 @@ import com.yedc.shared.injection.SupplierObjectProvider;
 import com.yedc.shared.settings.Settings;
 import com.yedc.shared.strings.Md5;
 import com.yedc.strings.localization.LocalizedApplication;
+import com.yedc.shared.FlavorRegistry;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -139,6 +142,14 @@ public class Collect extends Application implements
     public void onCreate() {
         super.onCreate();
         singleton = this;
+
+        FlavorRegistry.INSTANCE.setOfflineLayersUrl(getString(R.string.offline_layers_url));
+        FlavorRegistry.INSTANCE.setQrFolderUrl(getString(R.string.qr_folder_url));
+        FlavorRegistry.INSTANCE.setIdPrefix(getString(R.string.device_id_prefix));
+        FlavorRegistry.INSTANCE.setSmallIcon(R.drawable.ic_notification_icon_small);
+
+        String authority = getPackageName() + ".provider.odk";
+        FlavorRegistry.INSTANCE.setContentProviderAuthority(authority);
 
         CrashHandler.install(this).launchApp(
                 () -> ExternalFilesUtils.testExternalFilesAccess(this),

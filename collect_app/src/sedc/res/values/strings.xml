@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="collect_app_name" translatable="false">SEDC</string>
+    <!-- SEDC QR Code Folder URL -->
     <string name="qr_folder_url" translatable="false">https://drive.google.com/drive/folders/1gqcygrAcAVHlerNd3oKjKT7jjjafb8z3?usp=drive_link</string>
+    <!-- SEDC Cadastral Layers Folder URL -->
     <string name="offline_layers_url" translatable="false">https://drive.google.com/drive/folders/1BSuHJCgG-1lBxXA01qKrb23g_6MQLX2I?usp=drive_link</string>
+    <!-- Device ID prefix -->
+    <string name="device_id_prefix" translatable="false">sed</string>
 </resources>

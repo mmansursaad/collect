@@ -32,6 +32,7 @@ import com.yedc.strings.localization.getLocalizedString
 import com.yedc.androidshared.livedata.LiveDataUtils
 import com.yedc.strings.R
 import com.yedc.webpage.ExternalWebPageHelper
+import com.yedc.shared.FlavorRegistry
 
 class OfflineMapLayersPickerBottomSheetDialogFragment(
     registry: ActivityResultRegistry,
@@ -106,7 +107,7 @@ class OfflineMapLayersPickerBottomSheetDialogFragment(
 
         binding.mbtilesInfoGroup.addOnClickListener {
             // Access the flavor-specific URL via R.string
-            val layersUrl = getString(R.string.offline_layers_url)
+            val layersUrl = FlavorRegistry.offlineLayersUrl
 
             externalWebPageHelper.openWebPageInCustomTab(
                 requireActivity(),

@@ -6,6 +6,7 @@ import androidx.core.app.NotificationCompat
 import com.yedc.android.notifications.NotificationManagerNotifier
 import com.yedc.android.notifications.NotificationUtils
 import com.yedc.strings.localization.getLocalizedString
+import com.yedc.shared.FlavorRegistry
 
 object FormUpdatesAvailableNotificationBuilder {
 
@@ -24,7 +25,7 @@ object FormUpdatesAvailableNotificationBuilder {
             setContentTitle(application.getLocalizedString(com.yedc.strings.R.string.form_updates_available))
             setContentText(null)
             setSubText(projectName)
-            setSmallIcon(com.yedc.icons.R.drawable.ic_notification_small_yedc)
+            setSmallIcon(FlavorRegistry.smallIcon)
             setAutoCancel(true)
         }.build()
     }

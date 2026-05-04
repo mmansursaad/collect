@@ -8,6 +8,7 @@ import com.yedc.android.notifications.NotificationManagerNotifier
 import com.yedc.android.notifications.NotificationUtils
 import com.yedc.android.upload.FormUploadException
 import com.yedc.android.utilities.FormsUploadResultInterpreter
+import com.yedc.shared.FlavorRegistry
 import com.yedc.strings.localization.getLocalizedString
 
 object FormsSubmissionNotificationBuilder {
@@ -33,7 +34,7 @@ object FormsSubmissionNotificationBuilder {
             setContentTitle(getTitle(application, allFormsUploadedSuccessfully))
             setContentText(getMessage(application, allFormsUploadedSuccessfully, result))
             setSubText(projectName)
-            setSmallIcon(com.yedc.icons.R.drawable.ic_notification_small_yedc)
+            setSmallIcon(FlavorRegistry.smallIcon)
             setAutoCancel(true)
 
             if (!allFormsUploadedSuccessfully) {
