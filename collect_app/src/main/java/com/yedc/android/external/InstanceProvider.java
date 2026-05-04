@@ -42,6 +42,7 @@ import com.yedc.android.utilities.InstancesRepositoryProvider;
 import com.yedc.forms.instances.Instance;
 import com.yedc.projects.ProjectsRepository;
 import com.yedc.settings.SettingsProvider;
+import com.yedc.shared.FlavorRegistry;
 
 import javax.inject.Inject;
 
@@ -49,7 +50,10 @@ public class InstanceProvider extends ContentProvider {
 
     private static final int INSTANCES = 1;
     private static final int INSTANCE_ID = 2;
-    private static final UriMatcher URI_MATCHER = new UriMatcher(UriMatcher.NO_MATCH);
+
+    //private static final UriMatcher URI_MATCHER = new UriMatcher(UriMatcher.NO_MATCH);
+
+    private UriMatcher uriMatcher;
 
     @Inject
     InstancesRepositoryProvider instancesRepositoryProvider;
@@ -68,7 +72,16 @@ public class InstanceProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
+        setupUriMatcher();
         return true;
+    }
+
+    private void setupUriMatcher() {
+        String authority = InstancesContract.getAuthority();
+
+        uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
+        uriMatcher.addURI(authority, "instances", INSTANCES);
+        uriMatcher.addURI(authority, "instances/#", INSTANCE_ID);
     }
 
     @Override
@@ -84,7 +97,7 @@ public class InstanceProvider extends ContentProvider {
         }
 
         Cursor c;
-        switch (URI_MATCHER.match(uri)) {
+        switch (uriMatcher.match(uri)) {
             case INSTANCES:
                 c = dbQuery(projectId, projection, selection, selectionArgs, sortOrder);
                 break;
@@ -109,7 +122,7 @@ public class InstanceProvider extends ContentProvider {
 
     @Override
     public String getType(@NonNull Uri uri) {
-        switch (URI_MATCHER.match(uri)) {
+        switch (uriMatcher.match(uri)) {
             case INSTANCES:
                 return CONTENT_TYPE;
 
@@ -129,7 +142,7 @@ public class InstanceProvider extends ContentProvider {
         logServerEvent(projectId, AnalyticsEvents.INSTANCE_PROVIDER_INSERT);
 
         // Validate the requested uri
-        if (URI_MATCHER.match(uri) != INSTANCES) {
+        if (uriMatcher.match(uri) != INSTANCES) {
             throw new IllegalArgumentException("Unknown URI " + uri);
         }
 
@@ -155,7 +168,7 @@ public class InstanceProvider extends ContentProvider {
 
         int count;
 
-        switch (URI_MATCHER.match(uri)) {
+        switch (uriMatcher.match(uri)) {
             case INSTANCES:
                 try (Cursor cursor = dbQuery(projectId, new String[]{_ID}, where, whereArgs, null)) {
                     while (cursor.moveToNext()) {
@@ -214,9 +227,9 @@ public class InstanceProvider extends ContentProvider {
     private void logServerEvent(String projectId, String event) {
         AnalyticsUtils.logServerEvent(event, settingsProvider.getUnprotectedSettings(projectId));
     }
-
-    static {
-        URI_MATCHER.addURI(InstancesContract.AUTHORITY, "instances", INSTANCES);
-        URI_MATCHER.addURI(InstancesContract.AUTHORITY, "instances/#", INSTANCE_ID);
-    }
+    String authority = FlavorRegistry.INSTANCE.getContentProviderAuthority();
+    /*static {
+        URI_MATCHER.addURI(InstancesContract.getAuthority(), "instances", INSTANCES);
+        URI_MATCHER.addURI(InstancesContract.getAuthority(), "instances/#", INSTANCE_ID);
+    }*/
 }

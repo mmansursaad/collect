@@ -71,7 +71,9 @@ public class FormsProvider extends ContentProvider {
     // Forms unique by ID, keeping only the latest one downloaded
     private static final int NEWEST_FORMS_BY_FORM_ID = 3;
 
-    private static final UriMatcher URI_MATCHER = new UriMatcher(UriMatcher.NO_MATCH);
+    //private static final UriMatcher URI_MATCHER = new UriMatcher(UriMatcher.NO_MATCH);
+
+    private UriMatcher uriMatcher;
 
     @Inject
     FormsRepositoryProvider formsRepositoryProvider;
@@ -98,7 +100,17 @@ public class FormsProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
+        setupUriMatcher();
         return true;
+    }
+
+    private void setupUriMatcher() {
+        String authority = FormsContract.getAuthority();
+
+        uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
+        uriMatcher.addURI(authority, "forms", FORMS);
+        uriMatcher.addURI(authority, "forms/#", FORM_ID);
+        uriMatcher.addURI(authority, "newest_forms_by_form_id", NEWEST_FORMS_BY_FORM_ID);
     }
 
     @Override
@@ -113,7 +125,7 @@ public class FormsProvider extends ContentProvider {
         }
 
         Cursor cursor;
-        switch (URI_MATCHER.match(uri)) {
+        switch (uriMatcher.match(uri)) {
             case FORMS:
                 cursor = databaseQuery(projectId, projection, selection, selectionArgs, sortOrder, null, null);
                 cursor.setNotificationUri(getContext().getContentResolver(), FormsContract.getUri(projectId));
@@ -169,7 +181,7 @@ public class FormsProvider extends ContentProvider {
 
     @Override
     public String getType(@NonNull Uri uri) {
-        switch (URI_MATCHER.match(uri)) {
+        switch (uriMatcher.match(uri)) {
             case FORMS:
             case NEWEST_FORMS_BY_FORM_ID:
                 return FormsContract.CONTENT_TYPE;
@@ -204,7 +216,7 @@ public class FormsProvider extends ContentProvider {
         FormsRepository formsRepository = getFormsRepository(projectId);
         InstancesRepository instancesRepository = instancesRepositoryProvider.create(projectId);
 
-        switch (URI_MATCHER.match(uri)) {
+        switch (uriMatcher.match(uri)) {
             case FORMS:
                 try (Cursor cursor = databaseQuery(projectId, null, where, whereArgs, null, null, null)) {
                     while (cursor.moveToNext()) {
@@ -256,10 +268,10 @@ public class FormsProvider extends ContentProvider {
         AnalyticsUtils.logServerEvent(event, settingsProvider.getUnprotectedSettings(projectId));
     }
 
-    static {
-        URI_MATCHER.addURI(FormsContract.AUTHORITY, "forms", FORMS);
-        URI_MATCHER.addURI(FormsContract.AUTHORITY, "forms/#", FORM_ID);
+    /*static {
+        URI_MATCHER.addURI(FormsContract.getAuthority(), "forms", FORMS);
+        URI_MATCHER.addURI(FormsContract.getAuthority(), "forms/#", FORM_ID);
         // Only available for query and type
-        URI_MATCHER.addURI(FormsContract.AUTHORITY, "newest_forms_by_form_id", NEWEST_FORMS_BY_FORM_ID);
-    }
+        URI_MATCHER.addURI(FormsContract.getAuthority(), "newest_forms_by_form_id", NEWEST_FORMS_BY_FORM_ID);
+    }*/
 }

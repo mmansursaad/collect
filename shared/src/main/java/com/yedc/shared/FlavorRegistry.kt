@@ -10,5 +10,5 @@ object FlavorRegistry {
     var qrFolderUrl: String = "https://default.url"
     var idPrefix: String = "default"
     var smallIcon: Int = 0
-    var contentProviderAuthority: String = "default.provider"
+    var contentProviderAuthority: String = "com.yedc.android.provider.odk"
 }

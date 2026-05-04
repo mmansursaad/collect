@@ -17,19 +17,23 @@
 package com.yedc.android.external;
 
 import android.net.Uri;
+import com.yedc.shared.FlavorRegistry;
 
 public final class InstancesContract {
 
-    public static final String AUTHORITY = "com.yedc.android.provider.odk.instances";
+    //public static final String AUTHORITY = "com.yedc.android.provider.odk.instances";
+    public static String getAuthority(){
+        return FlavorRegistry.INSTANCE.getContentProviderAuthority() + ".instances";
+    }
     public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.odk.instance";
     public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.odk.instance";
 
     public static Uri getUri(String projectId) {
-        return Uri.parse("content://" + AUTHORITY + "/instances?projectId=" + projectId);
+        return Uri.parse("content://" + getAuthority() + "/instances?projectId=" + projectId);
     }
 
     public static Uri getUri(String projectId, Long instanceDbId) {
-        return Uri.parse("content://" + AUTHORITY + "/instances/" + instanceDbId + "?projectId=" + projectId);
+        return Uri.parse("content://" + getAuthority() + "/instances/" + instanceDbId + "?projectId=" + projectId);
     }
 
     // This class cannot be instantiated

@@ -19,6 +19,7 @@ package com.yedc.android.external;
 import android.net.Uri;
 
 import com.yedc.android.database.forms.DatabaseFormColumns;
+import com.yedc.shared.FlavorRegistry;
 
 /**
  * Contract between the forms provider and applications. Contains definitions for the supported
@@ -29,7 +30,10 @@ import com.yedc.android.database.forms.DatabaseFormColumns;
  */
 public final class FormsContract {
 
-    static final String AUTHORITY = "com.yedc.android.provider.odk.forms";
+    //static final String AUTHORITY = "com.yedc.android.provider.odk.forms";
+    public static String getAuthority(){
+        return FlavorRegistry.INSTANCE.getContentProviderAuthority() + ".forms";
+    }
     public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.odk.form";
     public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.odk.form";
 
@@ -37,11 +41,11 @@ public final class FormsContract {
      * The content:// style URL for accessing Forms.
      */
     public static Uri getUri(String projectId, Long formDbId) {
-        return Uri.parse("content://" + AUTHORITY + "/forms/" + formDbId + "?projectId=" + projectId);
+        return Uri.parse("content://" + getAuthority() + "/forms/" + formDbId + "?projectId=" + projectId);
     }
 
     public static Uri getUri(String projectId) {
-        return Uri.parse("content://" + AUTHORITY + "/forms?projectId=" + projectId);
+        return Uri.parse("content://" + getAuthority() + "/forms?projectId=" + projectId);
     }
 
     /**
@@ -54,7 +58,7 @@ public final class FormsContract {
      */
     @Deprecated
     public static Uri getContentNewestFormsByFormIdUri(String projectId) {
-        return Uri.parse("content://" + AUTHORITY + "/newest_forms_by_form_id?projectId=" + projectId);
+        return Uri.parse("content://" + getAuthority() + "/newest_forms_by_form_id?projectId=" + projectId);
     }
 
     private FormsContract() {
